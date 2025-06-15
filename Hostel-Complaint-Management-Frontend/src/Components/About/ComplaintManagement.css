@@ -1,0 +1,132 @@
+/* App.css */
+
+.complaint-management-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(204, 199, 199) !important;
+    padding: 80px 20px
+    /* margin-top: 20px; */
+  }
+  .Complaint_manage h1{
+    color:black;
+    font-size: 50px;
+  }
+  /* .complaint-management-container h1{
+   
+  } */
+  .content-container {
+    max-width: 900px;
+    background-color: #ffffff;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .content-container .title {
+    margin-top: 19px;
+    font-size: 30px;
+    font-weight: 500px;
+    color: #080808;
+  }
+  
+  .feature-list {
+    list-style:circle filled !important;
+    padding-left: 0;
+color: black;
+  }
+  
+  .feature-list li {
+    margin: 10px 0;
+    font-size: 20px;
+    color: #0c0c0c;
+    text-align: left;
+    justify-content: flex-start;
+  }
+  
+  .complaints-container {
+    background-color: rgb(204, 199, 199);
+  }
+  
+  /* General Styling */
+.Complaint_manage body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+  background-color: #f5f5fc;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.complaints-container {
+  background-color: #ffffff;
+  border-radius: 10px;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+.complaint-card {
+  display: flex;
+  align-items: center;
+  background-color: #f7f7f7;
+  border-radius: 10px;
+  padding: 10px 15px;
+  margin-bottom: 15px;
+  width: 100%;
+}
+
+.complaint-circle {
+  width: 40px;
+  height: 40px;
+  flex-shrink: 0;
+  background-color: #080808;
+  border-radius: 50%;
+  margin-right: 15px;
+}
+
+.complaint-text h2 {
+  margin: 0;
+  font-size: 16px;
+  color: #070707;
+}
+
+.complaint-text p {
+  margin: 5px 0 0;
+  font-size: 12px;
+  color: #0c0c0c;
+}
+
+.progress-bar {
+  display: flex;
+  justify-content: center;
+  margin-top: 10px;
+}
+
+.progress-dot {
+  width: 8px;
+  height: 8px;
+  background-color: #ddd;
+  border-radius: 50%;
+  margin: 0 4px;
+}
+
+.progress-dot.active {
+  background-color: #0c0c0c;
+}
+
+@media (max-width: 992px) {
+  .complaint-management-row {
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+  }
+  .Complaint_manage h1{
+    font-size: 30px;
+  }
+}

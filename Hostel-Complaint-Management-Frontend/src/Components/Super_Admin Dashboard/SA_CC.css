@@ -1,0 +1,266 @@
+.sa-cc-h2{
+  font-size: 32px;
+  color: #333;
+  margin-bottom: 37px;
+  text-align: center;
+}
+
+/* Container for sidebar and main content */
+.sa-cc-dashboard-container {
+  display: flex;
+  font-family: Arial, sans-serif;
+  overflow: hidden;
+  margin-top: 60px;
+  width: 80%;
+  margin-left: 250px;
+  flex-direction: column; /* Ensure Add button aligns below the table */
+}
+
+/* Main Content Styling */
+.sa-cc-main-content {
+  flex-grow: 1;
+  padding: 20px;
+  width: 100%;
+  overflow: auto;
+}
+
+/* Table Title */
+.sa-cc-main-content-table-title {
+  font-size: 28px;
+  margin-bottom: 20px;
+}
+
+/* Table Styling */
+.sa-cc-main-content table {
+  width: 100%;
+  table-layout: fixed;
+  border-collapse: collapse;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  background: #ffffff;
+  margin: 20px 0;
+}
+
+.sa-cc-main-content table th,
+.sa-cc-main-content table td {
+  padding: 12px;
+  text-align: left;
+  border: 1px solid #ddd;
+}
+
+.sa-cc-main-content table th {
+  background-color: black !important;
+  font-size: 18px;
+  color: rgb(204, 199, 199);
+}
+.sa-cc-main-content table input {
+  max-width: 100%;
+}
+
+/* Ensure the first column (CC Name) has proper spacing */
+.sa-ccmain-content table td:first-child {
+  font-weight: bold;
+}
+
+/* Action Buttons Styling inside the Table */
+.sa-cc-main-content table td:last-child {
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+/* Edit & Remove Buttons */
+.sa-cc_edit-button,
+.sa-cc_remove-button,
+.sa-cc-cancel-button,
+.sa-cc-add-button,
+.sa-cc_save-button,
+.sa-cc_view-button {
+  padding: 8px 15px;
+  font-size: 16px;
+  cursor: pointer;
+  border: none;
+  border-radius: 12px;
+  transition: transform 0.3s, box-shadow 0.3s;
+  margin: 5px;
+}
+
+.sa-cc_edit-button {
+  background-color: blue;
+  color: #ffffff;
+}
+.sa-cc_view-button {
+  background-color: black;
+  color: #ffffff;
+}
+.sa-cc_save-button{
+  background-color: #4caf50;
+}
+
+.sa-cc_remove-button {
+  background-color: rgb(235, 29, 29);
+  color: #ffffff;
+}
+
+.sa-cc_edit-button:hover,
+.sa-cc_remove-button:hover,
+.sa-cc-cancel-button:hover,
+.sa-cc-add-button:hover,
+.sa-cc_save-button:hover,
+.sa-cc_view-button:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+/* Add Button Positioned Below the Table */
+.sa-cc_action-buttons {
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+}
+
+.sa-cc_add-button {
+  padding: 12px 25px;
+  font-size: 16px;
+  cursor: pointer;
+  border: none;
+  color: white;
+  border-radius: 14px;
+  background-color: #4caf50;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.sa-cc_add-button:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+.sa-cc-popup {
+  position: fixed;
+  z-index: 1000;
+  top: 60px;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: start;
+}
+
+.sa-cc-popup-content {
+  background: white;
+  padding: 20px;
+  border-radius: 8px;
+  width: 300px;
+  margin-top: 40px;
+}
+
+.sa-cc-popup input {
+  padding: 8px;
+  margin: 5px 0;
+}
+
+.sa-cc-popup-actions {
+  display: flex;
+  justify-content: space-between;
+}
+
+.sa-cc-error {
+  color: red;
+  font-size: 14px;
+}
+
+
+/* Responsive Styles */
+@media (max-width: 992px) {
+  .sa-cc-dashboard-container {
+    flex-direction: column;
+    padding: 10px;
+  }
+
+  .sa-cc-main-content {
+    width: 100%;
+    padding: 0;
+  }
+
+  .sa-cc-main-content-table-title {
+    font-size: 24px;
+  }
+
+  .sa-cc_edit-button,
+  .sa-cc_remove-button,
+  .sa-cc_view-button {
+    font-size: 14px;
+    padding: 6px 12px;
+  }
+
+  .sa-cc_add-button {
+    font-size: 14px;
+    padding: 10px 20px;
+  }
+}
+
+@media (max-width: 768px) {
+  .sa-cc-main-content-table-title {
+    font-size: 20px;
+  }
+  .sa-cc-dashboard-container {
+    margin: 250px auto 0 auto;
+  }
+  .sa-cc_action-buttons {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .sa-cc_add-button {
+    width: 80%;
+    text-align: center;
+    margin: 10px 0;
+  }
+
+  .sa-cc-main-content table th,
+  .sa-cc-main-content table td {
+    font-size: 14px;
+    padding: 8px;
+  }
+
+  /* Stack action buttons on small screens */
+  .sa-cc-main-content table td:last-child {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+@media (max-width: 480px) {
+  .sa-cc-dashboard-container {
+    width: 100%;
+    padding: 10px;
+  }
+
+  .sa-cc-main-content-table-title {
+    font-size: 18px;
+  }
+
+  .sa-cc_add-button {
+    font-size: 12px;
+    padding: 8px 15px;
+  }
+
+  .sa-cc_edit-button,
+  .sa-cc_remove-button,
+  .sa-cc_view-button {
+    font-size: 12px;
+    padding: 5px 10px;
+  }
+
+  .sa-cc-main-content table {
+    font-size: 12px;
+    max-width: 100%;
+  }
+
+}
+
+.sa-cc-table-responsive {
+  overflow-x: auto;
+  width: 100%;
+}

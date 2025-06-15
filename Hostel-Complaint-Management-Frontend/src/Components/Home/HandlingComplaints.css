@@ -1,0 +1,41 @@
+.HomeBannerWrapper{
+    /* background-image: url(../assets/images/uet-logo.png)!important; */
+    background-color: rgb(206, 203, 203);
+   
+    padding: 250px 0px 0px;
+  background-size: cover;
+  }
+  .HomeBannerWrapper img{
+    width: 100%;
+    height: 100%;
+  }
+  .para p{
+    font-family: "Montserrat", sans-serif;
+    font-size: 22px;
+    font-weight: 800;
+    line-height: 70.2px;
+    text-align: left;
+     color:black;
+     padding-bottom: 20px;
+  }
+  .integrated-para{
+    color: rgb(10, 10, 10);
+    font-size: 20px;
+    font-weight: 500px;
+    }
+    .integrated-heading{
+        font-size: 25px;
+        color:black;
+        font-weight: 500px;
+    }.integrated-para{
+      color: rgb(10, 10, 10);
+      font-size: 20px;
+      font-weight: 500px;
+      }
+      .integrated-heading{
+          font-size: 25px;
+          color:black;
+          font-weight: 500px;
+      }
+  
+  

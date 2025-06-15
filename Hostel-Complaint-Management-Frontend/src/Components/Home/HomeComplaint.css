@@ -1,0 +1,102 @@
+.AdvantageWrapper {
+  margin-top: 50px;
+}
+.AdvantageHeading {
+  font-family: "Montserrat", sans-serif;
+  font-size: 45px;
+  font-weight: 700;
+  line-height: 54px;
+  text-align: center;
+}
+.Advan-item  {
+  width: 160px;
+  height: 185px;
+  margin-left: 45px;
+  padding-top: 50px;
+  margin-top: -70px;
+  margin-bottom: -102px;
+}
+.Advan-image{
+  margin-left: 90px;
+  /* padding-bottom: 10px; */
+  position: relative;
+  z-index: 99;
+}
+.AdvantageSwiperWrapper {
+  /* margin-top: 100px; */
+  padding: 0 0 20px;
+  background-color:  rgb(204, 199, 199);
+  border-radius: 27px 27px 27px 27px;
+  position: relative;
+/* padding-bottom: 0px !important; */
+width:100%;
+height:300px;
+}
+.Advan-item {
+  width: 830px;
+  background-color: transparent !important;
+  /* height:260px !important; */
+  border-style: none !important;
+}
+.Advan-item .AdvanPara {
+  font-family: "Montserrat", sans-serif;
+  font-size: 15px;
+  font-weight: 500;
+  line-height: 23.04px;
+  text-align: left;
+  color: #000000;
+  /* padding-left: 30px; */
+  /* padding-right: 170px; */
+  /* padding-top: 30px; */
+}
+.card-titles .Advanh3 {
+  font-family: "Montserrat", sans-serif;
+  font-size: 21.6px;
+  font-weight: 600;
+  line-height: 25.92px;
+  text-align: left;
+  color: #000000;
+  padding-top: 40px;
+  padding-left: 35px;
+}
+.card-titles .Advanh6 {
+  font-family: "Montserrat", sans-serif;
+  font-size: 19.2px;
+  font-weight: 500;
+  line-height: 23.04px;
+  text-align: left;
+  color: #000000;
+  padding-left: 35px;
+}
+.button-prev {
+  background-color: black !important;
+  border: 5px solid  rgb(204, 199, 199); /* Border color and width */
+  clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
+  width: 42px;
+  height: 40px;
+}
+.button-next {
+  background-color:black !important;
+  border: 5px solid  rgb(204, 199, 199); /* Border color and width */
+  clip-Path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
+  width: 42px;
+  height: 40px;
+}
+.button-next svg {
+  padding-bottom: 5px;
+}
+.button-prev svg {
+  padding-bottom: 5px;
+}
+.Advantage-slider-control {
+  margin-right: 280px;
+  margin-top: 54px;
+}
+.Advantage-banner img {
+  width: 550px !important;
+  /* height: 680px !important; */
+  margin-left: -100px;
+  margin-top: 3px;
+  z-index: 99;
+  position: relative;
+}

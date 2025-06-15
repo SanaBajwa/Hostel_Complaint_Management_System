@@ -1,0 +1,123 @@
+.wrapper-status{
+    min-height: 100vh; /* Full viewport height */
+    display: flex;
+    justify-content: center; /* Center the menu horizontally */
+    align-items: center; /* Center the menu vertically */
+    padding: 20px;
+    margin-left: 200px;
+}
+
+/* Main container for the status bar */
+.status-bar-container {
+    max-width: 100%;
+    padding: 20px;
+    background-color: black; /* Light background color */
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    color:  rgb(241, 241, 241); /* Text color */
+}
+
+/* Status header */
+.status-bar-container h2 {
+    text-align: left;
+    margin-bottom: 30px; /* Space below the header */
+    color: rgb(241, 241, 241) !important;
+    font-weight: bold;
+}
+
+/* Flexbox layout for horizontal status bar */
+.status-bar {
+    display: flex;
+    justify-content: center; /* Space steps evenly */
+    column-gap: 90px;
+    align-items: center; /* Align items vertically */
+    position: relative;
+}
+
+/* Step container */
+.status-step {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    width: 100px; /* Adjust step width */
+    z-index: 1;
+}
+
+/* Outer Circle */
+.status-circle {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color:  rgb(241, 241, 241); /* Default gray */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 16px;
+    font-weight: bold;
+    color: #555;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.status-circle.completed {
+    background-color:#55DDE0; /* Blue for completed steps */
+    color: #fff; /* White text */
+  }
+  
+  .status-line {
+    height: 4px;
+    width: 160%;
+    background-color:  rgb(241, 241, 241); /* Default gray */
+    position: absolute;
+    top: 30%;
+    left: 145%;
+    transform: translateX(-50%);
+    z-index: -1;
+    transition: background-color 0.3s ease;
+    flex-grow: 1;
+  }
+  
+  .status-line.completed {
+    background-color:#55DDE0 ; /* Blue for completed line */
+  }
+  
+
+
+/* Label below each step */
+.status-label {
+    margin-top: 10px; /* Space above the label */
+    font-size: 0.9rem;
+    color: #fff;
+    text-align: center;
+}
+@media (max-width: 1130px){
+    .status-bar{
+        column-gap: 0px;
+    }
+    .status-line{
+        width: 70%;
+        left: 98%;
+    }
+}
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .status-line {
+        display: none;
+    }
+    .status-step {
+        margin-bottom: 20px;
+    }
+    .wrapper-status{
+        margin: 200px auto 0 auto;
+    }
+    .status-bar {
+        flex-direction: column; /* Stack items vertically */
+    }
+
+    .status-line {
+        height: 4px;
+        width: 5px; /* Vertical line */
+        top: 50%;
+        left: 20px;
+    }
+}

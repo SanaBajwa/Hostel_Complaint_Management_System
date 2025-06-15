@@ -1,0 +1,246 @@
+.sa-rt-h2{
+  font-size: 32px;
+    color: #333;
+    margin-bottom: 37px;
+    text-align: center;
+}
+
+/* Container for sidebar and main content */
+.sa-rt-dashboard-container {
+  display: flex;
+  font-family: Arial, sans-serif;
+  overflow: hidden;
+  margin-top: 60px;
+  width: 80%;
+  margin-left: 240px;
+  flex-direction: column; /* Ensure Add button aligns below the table */
+}
+
+/* Main Content Styling */
+.sa-rt-main-content {
+  flex-grow: 1;
+  padding: 20px;
+  overflow: auto;
+}
+
+.sa-rt-main-content-table-title {
+  font-size: 28px;
+  margin-bottom: 20px;
+}
+
+.sa-rt_Table {
+  background-color: black;
+  
+}
+
+/* Table Styling */
+.sa-rt-main-content table {
+  width: 100%;
+  min-width: 400px;
+  border-collapse: collapse;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  background: #ffffff;
+  margin: 50px auto;
+}
+
+.sa-rt-main-content table th,
+.sa-rt-main-content table td {
+  padding: 12px;
+  text-align: left;
+  border: 1px solid #ddd;
+}
+
+.sa-rt-main-content table th {
+  background-color: black !important;
+  font-size: 18px;
+  color: rgb(204, 199, 199);
+}
+
+.sa-rt-main-content table td {
+  font-size: 16px;
+}
+
+/* 📌 Action Buttons */
+.SA-RT_action-buttons {
+  display: flex;
+  gap: 10px;
+}
+
+.SA-RT_edit-button,
+.SA-RT_view-button,
+.SA-RT_delete-button,
+.sa-rt-close-button {
+  padding: 8px 15px;
+  font-size: 16px;
+  cursor: pointer;
+  border: none;
+  border-radius: 12px;
+  transition: transform 0.3s, box-shadow 0.3s;
+  margin: 5px;
+}
+
+.SA-RT_view-button{
+  background-color: black;
+  color: #ffffff;
+}
+.SA-RT_edit-button {
+  background-color: blue;
+  color: #ffffff;
+}
+
+.SA-RT_delete-button {
+  background-color: red;
+  color:#ffffff;
+}
+
+.SA-RT_edit-button:hover {
+  background-color: rgb(129, 129, 190);
+}
+
+.SA-RT_delete-button:hover {
+  background-color: darkred;
+}
+
+/* 📌 Editable Row Styling */
+.editable-row input {
+  width: 100%;
+  padding: 6px;
+  border: 1px solid #ddd;
+  font-size: 16px;
+}
+
+/* 📌 Add New User Button */
+.SA-RT_add-user-button {
+  display: block;
+  margin: 20px auto;
+  padding: 12px 20px;
+  font-size: 16px;
+  background-color: #4caf50;
+  color: white;
+  border: none;
+  border-radius: 14px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.SA-RT_add-user-button:hover {
+  background-color: #3d8f41;
+}
+
+.sa-rt-error-message {
+  color: red;
+  font-size: 14px;
+  margin-top: 5px;
+}
+
+/* 📌 Modal (Add New User Popup) */
+.SA-RT-modal {
+  position: fixed;
+  z-index: 1000;
+  top: 60px;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: start;
+}
+
+.SA-RT-modal.show {
+  display: flex;
+}
+
+.SA-RT-modal-content {
+  background: white;
+  padding: 20px;
+  margin-top: 40px;
+  border-radius: 10px;
+  width: 400px;
+}
+
+.SA-RT-modal-header {
+  font-size: 20px;
+  font-weight: bold;
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.SA-RT-modal input,
+.SA-RT-modal select {
+  width: 100%;
+  padding: 8px;
+  margin-top: 8px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+}
+
+.SA-RT-modal-buttons {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 15px;
+}
+
+.sa-rt-modal-save {
+  background-color: #4caf50;
+  color: white;
+  padding: 10px 15px;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+  margin-top: 10px;
+margin-right: 10px;
+}
+
+.sa-rt-modal-cancel {
+  background-color: grey;
+  color: white;
+  padding: 10px 15px;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.sa-rt-modal-save:hover {
+  background-color: #3d8f41;
+}
+
+.sa-rt-modal-cancel:hover {
+  background-color: #5a5a5a;
+}
+
+
+/* View Modal */
+.view-sa-rt-modal {
+  position: fixed;
+  z-index: 1000;
+  top: 60px;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: start;
+}
+
+.view-sa-rt-modal.show {
+  display: flex;
+}
+
+.view-sa-rt-modal-content {
+  background: white;
+  padding: 20px;
+  border-radius: 10px;
+  width: 400px;
+  margin-top: 40px;
+}
+@media (max-width: 768px) {
+  .sa-rt-dashboard-container {
+    margin: 280px auto 0 auto;
+    width: 100%;
+  }
+  .sa-rt-main-content {
+    padding: 0 10px;
+  }
+}

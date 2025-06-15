@@ -1,0 +1,95 @@
+.add-user-page {
+  max-width: 400px;
+  margin: 50px auto;
+  padding: 20px;
+  border-radius: 8px;
+  background: rgb(241, 241, 241);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+.add-user-page h2 {
+  margin-bottom: 15px;
+  font-size: 22px;
+}
+
+.user-form {
+  display: flex;
+  flex-direction: column;
+}
+
+.form-field {
+  margin-bottom: 10px;
+  text-align: left;
+}
+
+.user-form label {
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.user-form input, select {
+  width: 100%;
+  padding: 8px;
+  margin-top: 5px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-sizing: border-box;
+}
+
+.add-user {
+  background: black;
+  color: white;
+  padding: 10px;
+  border: none;
+  border-radius: 10px !important;
+  cursor: pointer;
+  margin-top: 10px;
+  width: 100%;
+}
+
+.add-user:hover {
+  background: #333;
+}
+
+/* Responsive Styles */
+@media (max-width: 480px) {
+  .add-user-page {
+      padding: 15px;
+      margin: 20px;
+      max-width: 100%;
+  }
+
+  .add-user-page h2 {
+      font-size: 18px;
+  }
+
+  .user-form input, select {
+      padding: 6px;
+  }
+
+  .add-user {
+      padding: 8px;
+      font-size: 14px;
+  }
+}
+
+@media (min-width: 481px) and (max-width: 768px) {
+  .add-user-page {
+      max-width: 90%;
+  }
+
+  .add-user-page h2 {
+      font-size: 20px;
+  }
+
+  .add-user {
+      font-size: 16px;
+  }
+}
+
+@media (min-width: 769px) {
+  .add-user-page {
+      max-width: 500px;
+  }
+}

@@ -1,0 +1,78 @@
+/* Main Dashboard Content */
+.munshi-dashboard-main {
+    flex: 1;
+    padding: 20px;
+    position: relative;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh; /* Ensure full height */
+    margin-left: 220px; /* Default sidebar width */
+    transition: margin-left 0.3s ease-in-out; /* Smooth transition */
+    box-sizing: border-box;
+  }
+  
+  /* UET Logo */
+  .uet-logo {
+    width: 300px; /* Default size */
+    height: auto;
+    opacity: 0.1; /* Slight transparency */
+    z-index: -1; /* Behind main content */
+  }
+  
+  /* Responsive Adjustments */
+  
+  /* Large Laptops & Small Desktops */
+  @media (max-width: 1200px) {
+    .munshi-dashboard-main {
+        margin-left: 200px;
+    }
+  }
+  
+  /* Tablets */
+  @media (max-width: 992px) {
+    .munshi-dashboard-main {
+        margin-left: 180px; /* Adjust margin for smaller sidebar */
+    }
+  
+    .uet-logo {
+        width: 220px; /* Adjusted logo size */
+    }
+  }
+  
+  /* Small Tablets & Large Phones */
+  @media (max-width: 768px) {
+    .munshi-dashboard-main {
+        margin-left: 80px; /* Reduce left margin as sidebar collapses */
+        padding: 15px; /* Adjust padding */
+    }
+  
+    .uet-logo {
+        width: 180px; /* Smaller logo for better fit */
+    }
+  }
+  
+  /* Mobile Devices */
+  @media (max-width: 480px) {
+    .munshi-dashboard-main {
+        margin-left: 60px; /* Sidebar collapses further */
+        padding: 10px; /* Reduce padding */
+    }
+  
+    .uet-logo {
+        width: 140px; /* Smaller logo for mobile */
+    }
+  }
+  
+  /* Extra Small Mobile Screens */
+  @media (max-width: 360px) {
+    .munshi-dashboard-main {
+        margin-left: 50px; /* Minimum margin for ultra-small screens */
+    }
+  
+    .uet-logo {
+        width: 120px;
+    }
+  }
+  

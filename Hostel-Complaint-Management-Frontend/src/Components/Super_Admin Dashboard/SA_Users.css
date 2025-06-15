@@ -1,0 +1,139 @@
+.sa-user-integration-container{
+  display: flex;
+  flex-direction: column; /* Aligns content vertically */
+  min-height: 100vh; /* Full height */
+  font-family: Arial, sans-serif;
+  overflow: hidden; /* Prevents unnecessary scrolling */
+  padding: 20px;
+  margin-left: 250px; /* Space for sidebar */
+  margin-top: 50px;
+}
+
+.add-user-button-container {
+display: flex;
+justify-content: center;
+margin-top: 20px;
+}
+
+.add-user-button {
+background-color: black;
+color: white;
+padding: 12px 24px;
+font-size: 16px;
+border: none;
+border-radius: 8px;
+cursor: pointer;
+transition: background-color 0.3s ease;
+}
+
+.add-user-button:hover {
+background-color: #333;
+}
+
+.sa-user-integration-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+  margin-bottom: 50px;
+  padding: 20px;
+}
+
+.sa-user-integration-app-item {
+  background: #ffffff;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  padding: 20px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.sa-user-integration-app-item:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
+}
+
+.index-enhance-img img {
+  max-width: 60px;
+  transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+.sa-user-integration-app-item:hover .index-enhance-img img {
+  transform: scale(1.2);
+  opacity: 0.9;
+}
+
+.app-name {
+  font-size: 16px;
+  font-weight: 500;
+  color: white;
+  margin-top: 10px;
+}
+
+.integration-box h1{
+  font-size: 50px;
+  font-weight: 500;
+}
+
+/* Responsive Styles */
+@media (max-width: 1024px) {
+.sa-user-integration-container {
+  padding: 10px;
+}
+
+.integration-box h1{
+  font-size: 36px;
+}
+
+.sa-user-integration-grid {
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 15px;
+}
+}
+
+@media (max-width: 768px) {
+.add-user-button {
+  padding: 10px 20px;
+  font-size: 14px;
+}
+
+.integration-box h1{
+  font-size: 28px;
+}
+.sa-user-integration-container {
+  margin: 250px auto 0 auto;
+}
+.sa-user-integration-grid {
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+}
+}
+
+@media (max-width: 480px) {
+.sa-user-integration-container {
+  padding: 5px;
+}
+
+.add-user-button {
+  padding: 8px 16px;
+  font-size: 12px;
+}
+
+.integration-box h1{
+  font-size: 24px;
+}
+
+.sa-user-integration-grid {
+  grid-template-columns: 1fr;
+}
+
+.sa-user-integration-app-item {
+  padding: 15px;
+}
+
+.index-enhance-img img {
+  max-width: 50px;
+}
+
+.app-name {
+  font-size: 14px;
+}
+}

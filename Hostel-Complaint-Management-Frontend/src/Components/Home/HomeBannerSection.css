@@ -1,0 +1,158 @@
+/* Main Wrapper */
+.HomeComplaintWrapper {
+  margin-top: 100px;
+  padding: 20px 0;
+  background-color: #f4f8fb !important; /* Light, calming background */
+}
+.swiper-wrapper {
+  align-items: center;
+}
+/* Heading */
+.HomeComplaintHeading {
+  font-family: "Montserrat", sans-serif;
+  font-size: 45px;
+  font-weight: 700;
+  text-align: center;
+  margin-bottom: 40px;
+  color: #2a2a72 !important; /* Modern blue shade */
+}
+
+/* Swiper Section */
+.HomeComplaintSwiper {
+  padding: 20px;
+}
+
+.HomeComplaint-image {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  margin: 0 auto;
+  display: block;
+  border: 3px solid #ffaec0 !important; /* Soft pink border */
+}
+
+.img-fluid {
+  width: 100%;
+  height: auto;
+  margin-top: 50px;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.HomeComplaint-item {
+  background-color: #ffffff !important;
+  border-radius: 15px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  margin-top: -40px;
+  transition: 0.3s ease;
+}
+
+.HomeComplaint-item:hover {
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+.mbs-slide-content p {
+  font-family: "Montserrat", sans-serif;
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 1.5;
+  text-align: center;
+  margin-bottom: 20px;
+  color: #555 !important;
+}
+
+.HomeComplainth3 {
+  font-size: 18px;
+  font-weight: bold;
+  margin-bottom: 5px;
+  text-align: center;
+  color: #2a2a72 !important;
+}
+
+.HomeComplainth6 {
+  font-size: 14px;
+  color: #888 !important;
+  text-align: center;
+}
+
+/* Banner Section */
+.HomeComplaint-banner img {
+  max-width: 100%;
+  border-radius: 15px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Slider Controls */
+.HomeComplaint-slider-control {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.button-prev,
+.button-next {
+  background-color: #67c3f3 !important; /* Light blue */
+  border: none;
+  padding: 10px 20px;
+  color: white !important;
+  font-size: 14px;
+  font-weight: bold;
+  cursor: pointer;
+  border-radius: 50px;
+  transition: 0.3s ease;
+}
+
+.button-prev:hover,
+.button-next:hover {
+  background-color: #45a1d8 !important; /* Slightly darker blue */
+}
+
+.mbs-slide-content {
+  margin-top: 100px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .HomeComplaintHeading {
+    font-size: 36px;
+  }
+
+  .HomeComplaint-item {
+    padding: 15px;
+  }
+
+  .mbs-slide-content p {
+    font-size: 16px;
+  }
+
+  .img-fluid {
+    margin-top: 20px;
+  }
+
+  .button-prev,
+  .button-next {
+    padding: 8px 16px;
+    font-size: 12px;
+  }
+}
+
+@media (max-width: 480px) {
+  .HomeComplaintHeading {
+    font-size: 28px;
+  }
+
+  .HomeComplaint-item {
+    margin-top: -20px;
+    padding: 10px;
+  }
+
+  .mbs-slide-content p {
+    font-size: 14px;
+  }
+
+  .button-prev,
+  .button-next {
+    padding: 6px 12px;
+    font-size: 10px;
+  }
+}

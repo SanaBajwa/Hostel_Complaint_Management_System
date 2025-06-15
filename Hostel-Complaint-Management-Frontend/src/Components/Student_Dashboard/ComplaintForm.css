@@ -1,0 +1,260 @@
+/* Complaint Form Container */
+.complaint-form-container {
+    width: 90%;
+    margin-top: 120px;
+    margin-left: 165px;
+}
+.complaint-form{
+    padding: 20px;
+    margin: 0 auto;
+    background-color: #ffffff; /* White background for clean look */
+    border-radius: 12px;
+    animation: fadeIn 0.5s ease-in-out;
+    box-shadow: 20px 10px 55px 20px rgba(0, 0, 0, 0.2);
+    max-width: 600px; /* Increased width */
+}
+/* Form Title */
+.complaint-form-container h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #333;
+    font-size: 1.5em;
+}
+
+/* Input and Label Styles */
+.complaint-form-container label {
+    display: block;
+    margin-bottom: 10px;
+    font-weight: bold;
+    color: #333; /* Label color */
+}
+
+/* Input, Textarea, and Select */
+.complaint-form-container input,
+.complaint-form-container textarea,
+.complaint-form-container select {
+    width: 100%;
+    padding: 12px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+    font-size: 16px;
+}
+
+/* Input Focus Styles */
+.complaint-form-container input:focus,
+.complaint-form-container textarea:focus {
+    border-color: black;
+    box-shadow: 0 0 5px black;
+    outline: none;
+}
+
+/* Textarea Styles */
+.complaint-form-container textarea {
+    height: 100px;
+}
+
+/* File Attachment Container */
+.file-attachment {
+    display: flex;
+    align-items: center;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    padding: 10px;
+    background-color: #f1f1f1;
+    flex-wrap: wrap; /* Wrap elements on small screens */
+}
+
+/* Optional Text Styles */
+.optional {
+    color: #888;
+    font-size: 0.9em;
+    margin-left: 5px;
+}
+
+/* File Upload Input Hidden */
+.file-upload-input {
+    display: none;
+}
+
+/* File Upload Label */
+.file-upload-label {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    padding: 10px;
+    border-radius: 8px;
+    background-color: #f1f1f1;
+    color: white;
+    font-weight: bold;
+    margin-right: 5px;
+}
+
+/* File Upload Icon */
+.file-upload-label img {
+    width: 30px;
+    height: 30px;
+    margin-right: 10px;
+}
+
+/* File Name Display */
+.file-name {
+    font-size: 16px;
+    color: #888;
+    margin-left: 10px;
+    font-weight: bold;
+}
+
+/* Submit Button */
+.complaint-form-container button {
+    width: 100%;
+    padding: 12px;
+    background-color: black;
+    color: rgb(204, 199, 199);
+    border: none;
+    border-radius: 8px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+/* Button Hover Effect */
+.complaint-form-container button:hover {
+    background-color: black;
+    transform: translateY(-2px);
+}
+
+/* Submit Button Animation */
+.complaint-form-container form.submitting {
+    pointer-events: none;
+}
+
+/* Fade In Animation */
+@keyframes fadeIn {
+    from {
+      opacity: 0;
+      transform: translateY(-10px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+}
+
+/* Popup Background */
+.popup {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background: rgba(0, 0, 0, 0.5);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 1000;
+}
+
+/* Popup Content */
+.popup-content {
+    background: #fff;
+    border-radius: 8px;
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    width: 90%;
+    max-width: 300px;
+}
+
+/* Popup Image */
+.popup-image {
+    max-width: 100px;
+    margin-bottom: 20px;
+}
+
+/* Back Button */
+.back-button {
+    background-color: black;
+    color: rgb(204, 199, 199);
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+.back-button:hover {
+    background-color: black;
+}
+
+/* Responsive Styles */
+@media screen and (max-width: 768px) {
+    .complaint-form-container {
+        width: 100%;
+        margin: 260px auto 0 auto;
+    }
+
+    .complaint-form-container h2 {
+        font-size: 1.3em;
+    }
+
+    .complaint-form-container input,
+    .complaint-form-container textarea,
+    .complaint-form-container select {
+        font-size: 14px;
+        padding: 10px;
+    }
+
+    .file-attachment {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .file-upload-label {
+        width: 100%;
+        justify-content: center;
+        padding: 8px;
+    }
+
+    .file-name {
+        width: 100%;
+        text-align: center;
+        margin-top: 5px;
+    }
+
+    .popup-content {
+        width: 80%;
+        padding: 15px;
+    }
+
+    .back-button {
+        width: 100%;
+        font-size: 14px;
+        padding: 8px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+
+    .complaint-form-container h2 {
+        font-size: 1.2em;
+    }
+
+    .complaint-form-container input,
+    .complaint-form-container textarea,
+    .complaint-form-container select {
+        font-size: 14px;
+        padding: 8px;
+    }
+
+    .file-upload-label {
+        padding: 6px;
+    }
+
+    .popup-content {
+        width: 90%;
+    }
+}

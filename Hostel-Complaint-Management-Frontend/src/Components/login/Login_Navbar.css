@@ -1,0 +1,240 @@
+/* Base Styles */
+.login-navbar {
+  position: relative;
+}
+.login-navbar body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f4;
+  padding-top: 70px; /* Adjust this value based on your navbar height */
+}
+.hamburger {
+  display: none;
+  font-size: 1.5rem;
+  color: #f0f0f0;
+  cursor: pointer;
+  z-index: 1100;
+  width: fit-content;
+}
+/* Navbar Container */
+.navbar-login {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #000; /* Lighter background */
+  padding: 10px 20px;
+  color: #333; /* Darker text for contrast */
+  position: fixed !important;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+/* Logo Section */
+.navbar-logo {
+  display: flex;
+  align-items: center;
+}
+
+.navbar-logo img {
+  width: 45px;
+  height: 45px;
+  margin-right: 10px;
+}
+
+.navbar-logo h1 {
+  font-size: 18px;
+  margin: 0;
+  color: #333; /* Darker text */
+  font-style: italic;
+}
+
+/* Navbar Menu */
+.navbar-menu {
+  display: flex;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  align-items: center;
+  /* color: #f0f0f0 !important; */
+}
+
+.navbar-menu li {
+  margin: 0 15px;
+  position: relative;
+}
+
+.navbar-menu a {
+  text-decoration: none;
+  color: #f0f0f0; /* Darker text */
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+
+.navbar-menu li:hover > a {
+  color: #f0f0f0; /* Lighter hover effect */
+}
+
+/* Dropdown Menu */
+.dropdown-menu {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background-color: #f1f1f1; /* Lighter background */
+  list-style: none;
+  padding: 10px 0;
+  margin: 0;
+  display: none;
+  min-width: 150px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  border-radius: 5px;
+  color: #333; /* Darker text */
+}
+
+.dropdown-menu li {
+  padding: 10px 20px;
+}
+
+.dropdown-menu li a {
+  color: #333;
+  font-weight: normal;
+  display: block;
+  transition: background-color 0.3s ease;
+}
+
+.dropdown-menu li a:hover {
+  background-color: #e0e0e0; /* Soft hover background */
+  color: #333;
+}
+
+.dropdown:hover .dropdown-menu {
+  display: block;
+}
+
+/* Sign-In Button */
+.SingIn_btn {
+  font-size: 12px;
+  font-weight: bold;
+  text-align: center;
+  color: #333;
+  background-color: #f0f0f0; /* Lighter background */
+  border: none;
+  border-radius: 35px;
+  padding: 10px 20px;
+  cursor: pointer;
+  width: 80px;
+  height: 43px;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.SingIn_btn:hover {
+  background-color: #f0f0f0; /* Lighter hover effect */
+  color: #333;
+  transform: scale(1.05);
+}
+
+.SingIn_btn:active {
+  transform: scale(0.95);
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+  .navbar-login {
+    flex-wrap: wrap;
+    padding: 10px;
+  }
+  /* .navbar-login .row {
+    align-items: start !important;
+  } */
+  .navbar-logo {
+    justify-content: center;
+  }
+  .navbar-menu-container {
+    padding: 10px 0;
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    background-color: #000;
+    position: absolute;
+    top: 60px;
+    left: 0;
+    z-index: 1000;
+  }
+  .hamburger {
+    display: block;
+  }
+
+  .navbar-menu-container.active {
+    display: flex;
+  }
+  .navbar-menu {
+    flex-direction: column;
+  }
+  .navbar-menu li {
+    margin: 10px 0;
+  }
+
+  .dropdown-menu {
+    position: relative;
+    top: auto;
+    left: auto;
+    width: 90%;
+    margin: 10px auto;
+  }
+}
+
+@media (max-width: 480px) {
+  .navbar-logo img {
+    width: 25px;
+    height: 25px;
+  }
+
+  .navbar-logo h1 {
+    font-size: 12px;
+  }
+
+  .navbar-menu a {
+    font-size: 14px;
+  }
+
+  .SingIn_btn {
+    width: 70px;
+    height: 38px;
+    padding: 8px 15px;
+    font-size: 10px;
+  }
+
+  .dropdown-menu li {
+    padding: 8px 15px;
+  }
+}
+
+/* Customize Progress Bar */
+.progress-bar {
+  position: fixed;
+  top: -10px;
+  left: 0;
+  width: 100%;
+  height: 3px;
+  background: linear-gradient(
+    to right,
+    #a3c6c2,
+    #b8d9d0,
+    #cce8e7
+  ); /* Light and subtle gradient */
+  animation: progress-animation 2s ease-in-out forwards;
+  z-index: 9999; /* Ensures it's above all content */
+}
+
+/* Progress bar animation */
+@keyframes progress-animation {
+  0% {
+    width: 0%;
+  }
+  100% {
+    width: 100%;
+  }
+}

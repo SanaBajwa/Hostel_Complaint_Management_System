@@ -1,0 +1,171 @@
+/* Complaint container styling */
+.complaint-status-container {
+  padding: 20px;
+  border-radius: 10px !important;
+  margin-left: 206px;
+  margin-top: 160px;
+}
+
+/* Table container to handle overflow on smaller screens */
+.status-table {
+  width: 1000px;
+  max-width: 100%;
+  overflow-x: auto;
+  /* display: block; Enables horizontal scrolling */
+  border-radius: 10px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  background-color: white;
+  position: relative;
+}
+
+/* Table styling */
+.status-table th {
+  background-color: black !important;
+  color:  rgb(241, 241, 241);
+  text-align: left;
+  padding: 15px;
+  font-size: 16px;
+}
+
+.status-table td {
+  padding: 15px;
+  font-size: 15px;
+  color: #333;
+  border-bottom: 1px solid #ddd;
+}
+
+
+/* Button styling */
+.complaint-status-check-btn {
+  padding: 8px 15px;
+  font-size: 14px;
+  color:  rgb(241, 241, 241) !important;
+  background-color: black !important;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+/* Button hover effect */
+.complaint-status-check-btn:hover {
+  background-color: #43a047;
+  transform: translateY(-2px);
+}
+
+/* Filter Section */
+.complaint-status-filter-section {
+  display: flex;
+  justify-content: flex-end;
+}
+
+/* Filter Button */
+.complaint-status-filter-btn {
+  padding: 10px 20px;
+  background-color:  rgb(241, 241, 241);
+  color: black;
+  border: none;
+  border-radius: 5px;
+  font-size: 14px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  position: absolute;
+  top: 90px;
+  right: 50px;
+  z-index: 2;
+}
+
+.complaint-status-filter-btn img {
+  width: 16px;
+  height: 16px;
+  display: inline-block;
+}
+
+.complaint-status-filter-btn:hover {
+  background-color:  rgb(241, 241, 241);
+}
+
+/* Dropdown Menu */
+.complaint-status-filter-dropdown {
+  position: absolute;
+  top: 181px;
+  right: 30px;
+  background-color: black;
+  border: 1px solid black;
+  border-radius: 5px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  z-index: 1000;
+  width: 180px;
+  color:  rgb(241, 241, 241);
+}
+
+.complaint-status-filter-dropdown ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.complaint-status-filter-dropdown ul li {
+  padding: 10px 15px;
+  font-size: 14px;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+.complaint-status-filter-dropdown ul li:hover {
+  background-color: rgb(241, 241, 241);
+  color: black;
+}
+
+/* Responsive Design */
+
+@media (max-width: 768px) {
+  .complaint-status-container {
+    margin: 250px auto 0 auto;
+  }
+
+  .status-table {
+    overflow-x: auto;
+    white-space: nowrap;
+    font-size: 14px;
+  }
+
+  .status-table th,
+  .status-table td {
+    padding: 10px;
+    font-size: 14px;
+  }
+
+  .complaint-status-check-btn {
+    padding: 6px 12px;
+    font-size: 12px;
+  }
+
+  .complaint-status-filter-btn {
+    position: relative;
+    margin-top: 10px;
+    right: auto;
+    top: -20px;
+  }
+}
+
+@media (max-width: 480px) {
+  .status-table th,
+  .status-table td {
+    font-size: 12px;
+    padding: 8px;
+  }
+
+  .complaint-status-check-btn {
+    padding: 5px 10px;
+  }
+
+  .complaint-status-filter-btn {
+    width: 100%;
+    text-align: center;
+    justify-content: center;
+  }
+}

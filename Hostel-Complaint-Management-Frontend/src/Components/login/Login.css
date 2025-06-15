@@ -1,0 +1,265 @@
+/* Reset CSS */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.login-container body {
+  font-family: Arial, sans-serif;
+  background-color:white; /* Set full background to white */
+}
+.Login_Wrapper{
+   background-color: #f0f0f0;
+   min-height: 100vh;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+}
+/* Main container */
+.login-container {
+  display: flex;
+  height: 100%;
+  justify-content: center;
+  align-items: center;
+  gap: 60px;
+  /* background-color: #fff; Make the whole background white */
+  padding: 60px 0px;
+}
+
+/* Left side (logo and heading) */
+
+
+
+.login-left h1 {
+  font-size: 20px;
+  font-weight: bold;
+  text-align: center;
+}
+
+/* Right side (login form container) */
+.login-right {
+  padding: 20px;
+}
+
+.login-form {
+  background-color: white !important;
+  padding: 30px;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.1); /* Soft shadow for container */
+  border-radius: 16px; /* Slightly rounded corners */
+  width: 100%;
+  max-width: 400px;
+  text-align: center; /* Center align the text */
+  margin-top: 80px;
+}
+
+.login-form h2 {
+  font-size: 24px;
+  margin-bottom: 20px;
+  color: black!important;
+  /* background-color: #000 !important; */
+  /* border-radius: 5px; */
+  line-height: 40px;
+  box-shadow: #000;
+  font-weight: 500px;
+}
+
+.form-group {
+  margin-bottom: 15px;
+  text-align: left;
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 5px;
+  color: #333;
+  font-weight: bold;
+}
+
+.form-group input {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  margin-bottom: 10px;
+  color:black !important;
+}
+
+/* Password container with toggle icon */
+.password-container {
+  position: relative;
+}
+
+.password-container input {
+  padding-right: 40px; /* Add space for the icon */
+}
+
+.toggle-icon {
+  position: absolute;
+  top: 50%;
+  right: 10px;
+  transform: translateY(-50%);
+  cursor: pointer;
+  width: 24px; /* Adjust icon size */
+  height: 24px; /* Adjust icon size */
+}
+
+.show-password {
+  display: flex;
+  align-items: center;
+  margin-top: 10px;
+  color: #000;
+}
+
+.show-password label {
+  margin-left: 5px;
+  font-size: 0.9rem;
+  color:black;
+}
+
+.forgot-password {
+  text-align: right;
+  margin-bottom: 20px;
+}
+
+.forgot-password a {
+  color:#918e8e !important;
+  text-decoration: none;
+  background-color:black ;
+}
+ .btn-primary {
+  width: 350px;
+  max-width: 100%;
+  height: 50px;
+  padding: 12px;
+  background-color: black !important;
+  border: none;
+  color: #fff;
+  border-radius: 25px !important; /* More rounded button */
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s;
+  margin-top: 20px;
+}
+
+.btn-primary:hover {
+  background-color:  black!important;
+}
+
+.success-message {
+  color: green;
+  font-size: 14px;
+  margin-top: 10px;
+}
+
+.error-message {
+  color: red;
+  font-size: 14px;
+  margin-top: 10px;
+}
+.complaint_login{
+  width: 100%;
+  max-width: 500px;
+}
+
+/* Media queries for responsiveness */
+@media screen and (max-width: 768px) {
+  .login-container {
+    flex-direction: column; /* Stack the login-left and login-right on top of each other */
+    align-items: center;
+    gap: 0px; /* Reduce gap between elements */
+  }
+
+  .login-left, .login-right {
+    flex: unset;
+    justify-content: center;
+    padding: 10px;
+  }
+
+  .complaint_login {
+    max-width: 300px;
+    transform: rotate(-5deg); /* Tilt the image */
+  transition: transform 0.3s ease; /* Smooth animation */
+  margin-bottom: -1px !important;
+  }
+  .complaint_login:hover {
+    transform: rotate(0deg); /* Straightens on hover */
+  }
+  .login-left p  {
+      font-size: 1.5rem;
+      width: 80%;
+      max-width: 600px;
+      text-align: center;
+      opacity: 0;
+      animation: fadeIn 1.5s ease-out forwards, typing 4s steps(40) 1s forwards;
+      overflow: hidden;
+      border-right: 2px solid white;
+      white-space: nowrap;
+    }
+
+    @keyframes fadeIn {
+      0% {
+        opacity: 0;
+      }
+      100% {
+        opacity: 1;
+      }
+    }
+
+    @keyframes typing {
+      from {
+        width: 0;
+      }
+      to {
+        width: 100%;
+      }
+    }
+  
+  .login-left h1 {
+    font-size: 18px;
+  }
+
+  .login-form {
+    padding: 20px; /* Reduce padding for smaller screens */
+    max-width: 350px; /* Reduce max width to fit smaller screens */
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .login-form {
+    padding: 15px; /* Further reduce padding for very small screens */
+    max-width: 300px; /* Further reduce max width */
+  }
+
+  .btn-primary {
+    padding: 10px; /* Adjust button size for smaller screens */
+  }
+
+  .login-left h1 {
+    font-size: 16px; /* Reduce text size */
+  }
+
+  .form-group input {
+    padding: 8px; /* Adjust input size */
+  }
+}
+/* Progress Bar */
+.progress-bar {
+  position: fixed;
+  top: -10px;
+  left: 0;
+  width: 100%;
+  height: 3px;
+  background: linear-gradient(to right, #55DDE0, #3AB0FF, #009FFD);
+  animation: progress-animation 2s ease-in-out forwards;
+  z-index: 9999; /* Ensures it's above all content */
+}
+
+@keyframes progress-animation {
+  0% {
+    width: 0;
+  }
+  100% {
+    width: 100%;
+  }
+}

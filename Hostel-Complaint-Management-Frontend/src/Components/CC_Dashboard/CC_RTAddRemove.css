@@ -1,0 +1,154 @@
+/* Container for sidebar and main content */
+.cc-dashboard-container {
+  display: flex;
+  /* height: 100vh; Full height */
+  font-family: Arial, sans-serif;
+  overflow: hidden; /* Prevents unnecessary scrolling */
+  margin-top: 50px;
+  margin-left: 250px;
+  min-height: 100vh;
+}
+
+/* Main Content Styling */
+.main-content {
+  flex-grow: 1; /* Fills remaining space */
+  padding: 20px;
+ 
+}
+
+.main-content-table-title {
+  font-size: 28px;
+  margin-bottom: 20px;
+}
+.RT_Table{
+  background-color: black ;
+}
+.RT-filter-btn {
+  background-color:#a7a7f0;
+  color: white;
+  padding: 10px 15px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  display: flex;
+  align-items: center;
+}
+
+
+/* Table Styling */
+.main-content table {
+  width:100%;
+  border-collapse: collapse;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  background: #ffffff;
+  margin-top: 50px;
+  
+}
+
+.main-content table th,
+table td {
+  padding: 12px;
+  text-align: left;
+  border: 1px solid #ddd;
+  
+}
+
+.main-content table th {
+  background-color:black !important;
+  font-size: 18px;
+  color:  rgb(204, 199, 199) ;
+}
+
+.main-content table td {
+  font-size: 16px;
+}
+
+/* Action Buttons Styling */
+.RT_action-buttons {
+  margin-top: 20px;
+  display: flex;
+  justify-content: flex-start;
+}
+
+.cc-RT_view-button {
+  padding: 10px 20px;
+  font-size: 16px;
+  margin: 10px;
+  cursor: pointer;
+  border: none;
+  color: white;
+  border-radius: 14px;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.RT_add-button {
+  background-color:  #4caf50;
+}
+
+.cc-RT_view-button {
+  background-color: black;
+  color:  rgb(204, 199, 199) ;
+}
+
+.RT_add-button:hover,
+.RT_remove-button:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+.RT_add-button:active,
+.RT_remove-button:active {
+  transform: translateY(2px);
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+}
+
+
+/* Modal Styling */
+.cc-rt-modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 2000; /* Ensure modal is above all other elements */
+}
+
+.cc-rt-modal-content {
+  background-color: white;
+  padding: 20px;
+  max-width: 500px;
+  width: 100%;
+  position: relative;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3); /* Adds depth */
+}
+
+/* Close and Back Buttons */
+.cc-rt-modal-cancel {
+  background-color: black;
+  color: rgb(204, 199, 199);
+  border: none;
+  padding: 10px;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+
+@media (max-width: 768px) {
+  .cc-dashboard-container{
+    margin: 200px auto 0 auto; /* Center the table on smaller screens */
+    padding: 0 5px;
+  }
+  .main-content{
+    padding: 0;
+  }
+  .RT_add-button, .RT_remove-button{
+    padding: 6px 12px;
+    margin: 5px;
+  }
+}

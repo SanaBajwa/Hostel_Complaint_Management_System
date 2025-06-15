@@ -1,0 +1,283 @@
+/* Container for sidebar and main content */
+.sa-war-dashboard-container {
+  display: flex;
+  font-family: Arial, sans-serif;
+  margin-top: 60px;
+  width: 80%;
+  margin-left: 240px;
+  flex-direction: column; /* Ensure Add button aligns below the table */
+}
+
+/* Main Content Styling */
+.sa-war-main-content {
+  flex-grow: 1;
+  padding: 20px;
+  width: 100%;
+  overflow: auto;
+}
+
+.sa-war-main-content-table-title {
+  font-size: 28px;
+  margin-bottom: 20px;
+}
+
+.sa-Warden_Table {
+  background-color: black;
+}
+
+/* Table Styling */
+.sa-war-main-content table {
+  width: 100%;
+  border-collapse: collapse;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  background: #ffffff;
+  margin: 50px auto;
+}
+
+.sa-war-main-content table th,
+.sa-war-main-content table td {
+  padding: 12px;
+  text-align: left;
+  border: 1px solid #ffffff;
+}
+
+.sa-war-main-content table th {
+  background-color: black !important;
+  font-size: 18px;
+  color: #ffffff !important;
+}
+
+.sa-war-main-content table td {
+  font-size: 16px;
+}
+
+/* Action Buttons in Table */
+.sa-Warden_action-buttons-container {
+  display: flex;
+  gap: 10px;
+}
+
+.cc-war-edit-button,
+.cc-war-remove-button,
+.cc-war-save-button,
+.cc-war-view-button,
+.cc-war-add-button {
+  padding: 8px 16px;
+  font-size: 14px;
+  border: none;
+  cursor: pointer;
+  border-radius: 8px;
+  margin: 5px;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.cc-war-edit-button {
+  background-color: blue;
+  color: white;
+}
+.cc-war-view-button{
+  background-color: black;
+  color: white;
+}
+
+.cc-war-add-button{
+background-color: #4caf50;
+}
+.cc-war-remove-button {
+  background-color: rgb(238, 20, 20);
+  color: #ffffff;
+}
+
+.cc-war-edit-button:hover,
+.cc-war-add-button:hover,
+.cc-war-remove-button:hover,
+.cc-war-view-button:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.2);
+}
+
+.sa-war-edit-button:active,
+.sa-war-remove-button:active {
+  transform: translateY(2px);
+}
+
+/* Add Button at the Bottom */
+.sa-Warden_action-buttons {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.sa-Warden_add-button {
+  padding: 12px 24px;
+  font-size: 18px;
+  background-color: #4caf50;
+  color: white;
+  border: none;
+  border-radius: 14px;
+  cursor: pointer;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.sa-Warden_add-button:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+.sa-Warden_add-button:active {
+  transform: translateY(2px);
+}
+
+
+
+.sa-war-modal {
+  position: fixed;
+  z-index: 1000;
+  top: 60px;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: start;
+}
+
+.sa-war-modal.show {
+  display: flex;
+}
+
+.sa-war-modal-content {
+  background: white;
+  padding: 20px;
+  margin-top: 40px;
+  border-radius: 10px;
+  width: 400px;
+}
+
+.sa-war-modal-header {
+  font-size: 20px;
+  font-weight: bold;
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.sa-war-modal input,
+.sa-war-modal select {
+  width: 100%;
+  padding: 8px;
+  margin-top: 8px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+}
+
+.sa-war-modal-buttons {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 15px;
+}
+
+.sa-war-modal-save {
+  background-color: #4caf50;
+  color: white;
+  padding: 10px 15px;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+  margin-top: 10px;
+margin-right: 10px;
+}
+
+.sa-war-modal-cancel {
+  background-color: grey;
+  color: white;
+  padding: 10px 15px;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.sa-war-modal-save:hover {
+  background-color: #3d8f41;
+}
+
+.sa-war-modal-cancel:hover {
+  background-color: #5a5a5a;
+}
+
+
+/* View Modal */
+.view-sa-war-modal {
+  position: fixed;
+  z-index: 1000;
+  top: 60px;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: start;
+}
+
+.view-sa-war-modal.show {
+  display: flex;
+}
+
+.view-sa-war-modal-content {
+  background: white;
+  padding: 20px;
+  border-radius: 10px;
+  width: 400px;
+  margin-top: 40px;
+}
+
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+  .sa-war-dashboard-container {
+    margin-left: 0;
+    align-items: center;
+  }
+
+  .sa-war-main-content table {
+    width: 100%;
+    font-size: 14px;
+  }
+
+  .sa-Warden_action-buttons {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .sa-Warden_add-button {
+    font-size: 16px;
+    width: 100%;
+  }
+}
+
+@media (max-width: 480px) {
+  .sa-war-main-content-table-title {
+    font-size: 20px;
+  }
+
+  .sa-Warden_edit-button,
+  .sa-Warden_remove-button {
+    font-size: 12px;
+    padding: 6px 12px;
+  }
+
+  .sa-Warden_add-button {
+    width: 100%;
+    text-align: center;
+  }
+}
+@media (max-width: 768px) {
+  .sa-war-dashboard-container {
+    margin: 280px auto 0 auto;
+    width: 100%;
+  }
+  .sa-war-main-content {
+    padding: 0;
+  }
+}

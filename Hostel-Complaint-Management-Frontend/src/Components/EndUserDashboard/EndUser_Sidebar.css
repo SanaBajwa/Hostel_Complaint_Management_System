@@ -1,0 +1,114 @@
+.Endsidebar {
+  width: 250px;
+  background-color: #e0e7ff;
+  padding: 20px;
+  height: calc(100vh - 60px); /* Full height */
+  overflow-y: auto;
+  position: fixed;
+  top: 60px;
+  z-index: 100;
+  left: 0;
+background-color: rgb(241, 241, 241);
+}
+.EndUETLOGO{
+  margin-left: 20px;
+}
+.Endsidebar h3{
+  font-size: 24px; /* Heading font size */
+  color: black; /* Heading color */
+  margin-bottom: 20px; /* Space below the heading */
+margin-top: 20px;
+}
+.Endmenu-item {
+  padding: 10px 0;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.Endmenu-item:hover {
+  color:white !important;
+}
+
+.Endstats {
+  margin-top: 20px;
+}
+
+.Endstat-box {
+  background-color: white;
+  color: black;
+  border-radius: 8px;
+  padding: 10px;
+  text-align: center;
+  margin-bottom: 10px;
+}
+.EndUser-Icon{
+  color: black;
+  margin-left: 10px;
+  margin-top: -6px;
+  width: 30px;
+  height: 30px;
+}
+
+
+.Endsidebar ul {
+  list-style: none; /* No bullets for list */
+  padding: 0; /* Remove default padding */
+  margin: 0; /* Remove default margin */
+}
+
+.Endsidebar ul li a {
+  padding: 14px 7px; /* Padding for list items */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  display: block;
+  border-radius: 10px;
+  cursor: pointer; /* Cursor change on hover */
+  color: black; /* Text color for list items */
+  font-weight: bold; /* Make text bold */
+  transition: background-color 0.3s; /* Smooth transition for background color */
+  width: 100%; /* Full width of the sidebar */
+  box-sizing: border-box; /* Include padding in width calculation */
+}
+
+.Endsidebar ul li:hover {
+  background-color:  rgb(241, 241, 241); /* Background color on hover */
+}
+
+@media (max-width: 768px) {
+  .Endsidebar {
+      width: 100%;
+      height: auto;
+      padding: 15px;
+      top: 150px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+  }
+  .Endsidebar h3{
+    margin-bottom: 0 !important;
+    margin-top: 0 !important;
+  }
+  .Endsidebar ul{
+      display: flex;
+  }
+
+  .EndUETLOGO {
+      display: none; /* Hide logo */
+  }
+  .Endstat-box{
+    display: none;
+  }
+
+}
+@media (max-width: 520px) {
+  .Endsidebar li span{
+    display: none;
+  }
+  .EndUser-Icon{
+    margin: 0px;
+  }
+}
+@media (max-width: 480px) {
+  .Endsidebar {
+      top: 140px;
+  }
+}

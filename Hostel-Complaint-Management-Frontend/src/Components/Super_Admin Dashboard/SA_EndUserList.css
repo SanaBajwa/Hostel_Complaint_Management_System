@@ -1,0 +1,72 @@
+/* Filter Dropdown Button */
+/*  */
+.sa_enduser-list-wrapper{
+  overflow-x: auto;
+}
+
+.SA_EndUserList_save-btn,
+.SA_EndUserList_edit-btn,
+.SA_EndUserList_delete-btn,
+.SA_EndUserList_view-btn,
+.SA_EndUserList_add-btn,
+.SA_EndUserList_save-btn {
+  padding: 8px 15px;
+  font-size: 16px;
+  cursor: pointer;
+  border: none;
+  border-radius: 12px;
+  transition: transform 0.3s, box-shadow 0.3s;
+  margin: 5px;
+}
+
+.SA_EndUserList_add-btn{
+  background-color: #4caf50;
+  color: #ffffff;
+}
+.SA_EndUserList_edit-btn {
+  background-color: blue;
+  color: #ffffff;
+}
+.SA_EndUserList_view-btn {
+  background-color: black;
+  color: #ffffff;
+}
+.SA_EndUserList_save-btn{
+  background-color: #4caf50;
+}
+
+.SA_EndUserList_delete-btn {
+  background-color: rgb(235, 29, 29);
+  color: #ffffff;
+}
+
+.SA_EndUserList_save-btn:hover,
+.SA_EndUserList_edit-btn:hover,
+.SA_EndUserList_delete-btn:hover,
+.SA_EndUserList_view-btn:hover,
+.SA_EndUserList_add-btn:hover,
+.SA_EndUserList_save-btn:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+/* Media Queries */
+@media (max-width: 768px) {
+  .warden_filter-btn {
+    top: 15px;
+    right: 15px;
+    font-size: 13px;
+    padding: 5px 8px;
+    max-width: 120px;
+  }
+}
+
+@media (max-width: 480px) {
+  .warden_filter-btn {
+    top: 10px;
+    right: 10px;
+    font-size: 12px;
+    padding: 4px 6px;
+    max-width: 100px;
+  }
+}

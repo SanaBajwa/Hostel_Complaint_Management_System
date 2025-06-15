@@ -1,0 +1,158 @@
+/* Container for sidebar and main content */
+.cc-std-dashboard-container {
+  display: flex;
+  font-family: Arial, sans-serif;
+  overflow-x: hidden; /* Prevent horizontal scrolling */
+  margin-top: 60px;
+  width: 80%;
+  margin-left: 240px;
+}
+
+/* Main Content Styling */
+.cc-std-main-content {
+  flex-grow: 1;
+  padding: 20px;
+  width: 100%;
+  overflow: auto;
+}
+
+/* Table Styling */
+.cc-std-main-content table {
+  width: 100%;
+  min-width: 400px;
+  border-collapse: collapse;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  background: #ffffff;
+  margin: 50px auto;
+}
+
+.cc-std-main-content table th,
+.cc-std-main-content table td {
+  padding: 12px;
+  text-align: left;
+  border: 1px solid #ddd;
+}
+
+.cc-std-main-content table th {
+  background-color: black !important;
+  font-size: 18px;
+  color: rgb(204, 199, 199);
+}
+
+.cc-std-main-content table td {
+  font-size: 16px;
+}
+
+/* Action Buttons Styling */
+.cc-std_edit-button,
+.cc-std_remove-button,
+.cc-std_view-button,
+.cc-std-close-button,
+.cc-std-submit-button {
+  padding: 8px 15px;
+  font-size: 14px;
+  cursor: pointer;
+  border: none;
+  border-radius: 10px;
+  transition: transform 0.3s, box-shadow 0.3s;
+  margin: 5px;
+}
+.cc-std-submit-button{
+  background-color:green;
+  color: #ffffff;
+}
+.cc-std_view-button{
+  background-color:black;
+  color: #ffffff;
+}
+
+.cc-std_edit-button {
+  background-color: blue;
+  color: white;
+}
+
+.cc-std_remove-button {
+  background-color: red;
+color: #ffffff;
+}
+
+.cc-std_edit-button:hover,
+.cc-std_remove-button:hover,
+.cc-std_view-button:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
+
+.cc-std_edit-button:active,
+.cc-std_remove-button:active {
+  transform: translateY(2px);
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+}
+
+/* Add New Student Button */
+.cc-std_action-buttons {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.cc-std_add-new-button {
+  padding: 12px 20px;
+  font-size: 16px;
+  background-color: #4caf50;
+  color: white;
+  border: none;
+  border-radius: 14px;
+  cursor: pointer;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.cc-std_add-new-button:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+.cc-std_add-new-button:active {
+  transform: translateY(2px);
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+}
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+  .main-content table {
+    width: 90%;
+  }
+}
+
+@media (max-width: 768px) {
+  .main-content table {
+    width: 95%;
+  }
+
+  .RT_add-new-button {
+    padding: 10px 16px;
+    font-size: 14px;
+  }
+  .cc-std-dashboard-container {
+    margin: 240px auto 0 auto;
+    width: 100%;
+  }
+  .cc-std-main-content {
+    padding: 0 10px;
+  }
+}
+
+@media (max-width: 480px) {
+  .cc-dashboard-container {
+    margin-left: 0;
+  }
+
+  .main-content table {
+    width: 100%;
+  }
+
+  .RT_add-new-button {
+    padding: 8px 14px;
+    font-size: 12px;
+  }
+}

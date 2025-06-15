@@ -1,0 +1,84 @@
+/* Container for the Key Features section */
+.key-features-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+    padding: 20px;
+    background-color:  black; /* Light gray background */
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    max-width: 800px;
+    text-align: center;
+  }
+  .Features{
+    background-color: rgb(204, 199, 199) ;
+    padding-bottom: 60px;
+  }
+  /* Title styling */
+  .key-features-container h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    color: white; /* Dark gray */
+    font-weight: bold;
+  }
+  
+  /* Features container */
+  .features {
+    display: flex;
+    gap: 20px; /* Space between feature cards */
+    justify-content: center;
+    flex-wrap: wrap; /* Wrap cards on smaller screens */
+  }
+  
+  /* Individual feature card */
+  .feature-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #fff; /* White card background */
+    border: 2px solid #e0e0e0; /* Light gray border */
+    border-radius: 10px;
+    padding: 20px;
+    width: 150px;
+    height: 150px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+  }
+  
+  /* Hover effect for feature card */
+  .feature-card:hover {
+    transform: translateY(-5px); /* Lift effect */
+    border-color:  rgb(204, 199, 199) ; /* Highlight border on hover */
+  }
+  
+  /* Icon styling */
+  .feature-icon {
+    font-size: 3rem; /* Large icon size */
+    margin-bottom: 10px;
+    color:  rgb(204, 199, 199) ; /* Primary blue color */
+  }
+  
+  /* Text styling */
+  .feature-text {
+    font-size: 1.1rem;
+    font-weight: 600;
+    color: black; /* Medium gray */
+  }
+  
+  /* Selected feature styling */
+  .feature-card.selected {
+    background-color:  rgb(204, 199, 199) ; /* Blue background for selected card */
+    color:black; /* White text and icon */
+    border-color: #4a90e2; /* Remove border contrast */
+  }
+  
+  .feature-card.selected .feature-icon,
+  .feature-card.selected .feature-text {
+    color: #fff; /* White color for icon and text */
+  }
+  
+  

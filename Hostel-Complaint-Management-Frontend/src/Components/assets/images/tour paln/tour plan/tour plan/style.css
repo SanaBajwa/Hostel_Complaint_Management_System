@@ -1,0 +1,155 @@
+<style>
+.container {
+  position: relative;
+  text-align: center;
+  color: white;
+}
+.top-right {
+  position: absolute;
+  top: 10px;
+  right: 20px;
+  color: chartreuse;
+}
+.centered{
+  position: absolute;
+  left: 50%;
+  bottom: 40%;
+  transform: translate(-50%, -50%);
+  color: chartreuse;
+  font-style: oblique;
+  animation-name: experience;
+  animation-duration: 4s;
+  font-size: 30px;
+}
+@keyframes experience
+{
+  0%{left: 200px;}
+}
+
+#first
+{
+    font-size: 20px;
+}
+.option
+{
+  font-size: 17px;
+}
+  
+  #second
+  {
+    font-size: 30px;
+  }
+  #table
+  {
+    position:relative;
+    font-size: larger;
+  }
+  #image
+  {
+    padding-right: 50px;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+* {box-sizing: border-box}
+body {font-family: Arial, Helvetica, sans-serif;}
+
+.navbar {
+    margin-top: 15px;
+    width: 100%;  
+    height:50px;
+    overflow: auto;
+}
+.navbar a {
+    margin-top: 15px;
+  float: left;
+  padding: 12px;
+  color:white;
+  background-color: black;
+  text-decoration: none;
+  font-size: 17px;
+  width: 15%;
+  height:50px; /* Four links of equal widths */
+  text-align: center;
+}
+.navbar a:hover {
+    margin-top: 15px;
+  background-color:silver;
+  color: black;
+}
+.navbar a{
+    margin-top: 15px;
+    background-color:rgba(0, 0, 0, 0.842);
+  }
+
+.navbar a.active {
+    margin-top: 15px;
+  background-color: #04AA6D;
+}
+.box
+{
+  display: flex; 
+  gap: 20px; 
+  padding-left: 30px;
+
+}
+.text {
+ color: black;
+ padding-right: 30px;
+ 
+}
+.pak
+{
+  background-color: rgba(255, 228, 196, 0.726);
+  font-size: larger;
+}
+.logo
+{
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  width: 80px;
+  
+
+}
+.wedding.jpg
+{
+  position: relative;
+  
+}
+.png
+{
+  opacity: 0.9;
+}
+.wedding
+{
+  background-color: rgba(0, 0, 0, 0.6);
+  color: white;
+  position: absolute;
+  left: 50%;
+  bottom: -196%;
+  transform: translate(-50%, -50%);
+  font-style: oblique;
+  font-size: 30px;
+  text-align: center;
+  
+}
+#first
+{
+  width: 100%;
+  padding: 12px 16px;
+  background-color:rgba(192, 192, 192, 0.548);
+}
+.row
+{
+  width: 25%;
+  text-align: center;
+}
+p
+{
+  font-size: larger;
+}
+#copy
+{
+  text-align: center;
+  background-color: burlywood;
+}

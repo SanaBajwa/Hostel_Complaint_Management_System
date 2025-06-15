@@ -1,0 +1,126 @@
+/* Sidebar Container */
+.RT-sidebar {
+  width: 200px;
+  background-color: rgb(241, 241, 241);
+  height: calc(100vh - 60px); /* Full height */
+  overflow-y: auto;
+  padding: 20px;
+  position: fixed;
+  left: 0;
+  top: 60px;
+  box-sizing: border-box;
+  transition: width 0.3s ease; /* Smooth transition */
+  z-index: 1000; /* Ensure it stays on top */
+}
+
+/* Sidebar Logo */
+.RT-sidebar-logo {
+  width: 100%;
+  height: auto;
+  margin-top: 70px;
+  margin-bottom: 20px;
+}
+
+/* Sidebar Header */
+.RT_header {
+  color: black !important;
+  font-size: 20px;
+  font-weight: bold;
+  margin-bottom: 50px !important;
+}
+
+/* Sidebar List */
+.RT-sidebar ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+/* Sidebar List Items */
+.RT-sidebar ul li a {
+  padding: 15px;
+  padding-left: 5px;
+  cursor: pointer;
+  color: black !important;
+  font-weight: bold;
+  text-align: left !important;
+  border-radius: 10px;
+  font-size: 18px;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+  display: flex;
+  align-items: left;
+  justify-content: left;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Sidebar List Item Hover Effect */
+.RT-sidebar ul li:hover {
+  background-color: rgb(226, 226, 226);
+  transform: scale(1.05); /* Subtle hover effect */
+}
+
+/* Sidebar Icons */
+.RT-complaints img, 
+.RT-Graph-Icon {
+  width: 30px;
+  height: 30px;
+  margin-left: 15px !important;
+}
+
+/* Navbar Logo */
+.navbar-logo {
+  display: flex;
+  align-items: center;
+}
+
+.navbar-logo img {
+  width: 45px;
+  height: 45px;
+  margin-right: 10px;
+}
+
+.navbar-logo h1 {
+  font-size: 18px;
+  margin: 0;
+  color: white;
+  font-style: italic;
+}
+
+/* 📌 Responsive Design */
+
+
+/* Small Tablets & Large Phones */
+@media (max-width: 768px) {
+  .RT-sidebar {
+      width: 100%;
+      height: auto;
+      padding: 15px;
+      top: 150px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+  }
+  .RT_header{
+    margin-bottom: 0 !important;
+  }
+  .RT-sidebar ul{
+      display: flex;
+  }
+  hr{
+      display: none; /* Hide the horizontal line */
+  }
+  .sidebar-logo {
+      display: none; /* Hide logo */
+  }
+
+}
+@media (max-width: 520px) {
+  .RT-sidebar li span{
+    display: none;
+  }
+}
+@media (max-width: 480px) {
+  .RT-sidebar {
+      top: 140px;
+  }
+}

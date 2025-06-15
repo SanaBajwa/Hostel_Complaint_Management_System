@@ -1,0 +1,109 @@
+/* Wrapper for the entire container with background image */
+.complaint-type-wrapper {
+  min-height: 100vh; /* Full viewport height */
+  margin-left: 200px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  text-align: center;
+}
+
+/* Complaint Type Menu Styling */
+.complaint-type-menu {
+  background-color: black !important;
+  border-radius: 10px;
+  padding: 25px;
+  width: 400px;
+  text-align: center;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  opacity: 0;
+  animation: slideDown 0.5s forwards ease-in-out;
+  margin-top: 50px;
+}
+
+/* Animation for scaling and sliding down */
+@keyframes slideDown {
+  0% {
+      transform: scale(0.8);
+      opacity: 0;
+  }
+  100% {
+      transform: scale(1);
+      opacity: 1;
+  }
+}
+
+/* Heading Styling */
+.complaint-type-menu h2 {
+  color:  rgb(241, 241, 241) !important;
+  margin-bottom: 20px;
+  font-size: 1.8rem;
+  font-weight: bold;
+}
+
+/* List Styling */
+.complaint-type-menu ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+.complaint-type-menu ul li {
+  padding: 15px;
+  font-size: 1.2rem;
+  background-color:  rgb(241, 241, 241) !important;
+  color: black;
+  border-radius: 5px;
+  margin-bottom: 10px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+/* Hover Effect */
+.complaint-type-menu ul li:hover {
+  background-color:  rgb(241, 241, 241);
+  transform: translateY(-3px);
+}
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+  .complaint-type-menu {
+      width: 80%;
+      padding: 20px;
+  }
+}
+
+@media (max-width: 768px) {
+  .complaint-type-menu {
+      width: 90%;
+      padding: 15px;
+  }
+  .complaint-type-wrapper {
+      margin: 100px auto 0 auto;
+  }
+  .complaint-type-menu h2 {
+      font-size: 1.5rem;
+  }
+  .complaint-type-menu ul li {
+      font-size: 1rem;
+      padding: 12px;
+  }
+}
+
+@media (max-width: 480px) {
+  .complaint-type-menu {
+      width: 100%;
+      padding: 10px;
+      border-radius: 5px;
+  }
+
+  .complaint-type-menu h2 {
+      font-size: 1.3rem;
+  }
+
+  .complaint-type-menu ul li {
+      font-size: 1rem;
+      padding: 10px;
+  }
+}

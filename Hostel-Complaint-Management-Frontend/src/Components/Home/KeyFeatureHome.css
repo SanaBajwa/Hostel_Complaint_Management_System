@@ -1,0 +1,42 @@
+.integration-grid {
+  display:grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+  margin-bottom: 50px;
+  padding: 20px;
+}
+
+.integration-app-item {
+  background: #ffffff;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  padding: 20px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.integration-app-item:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
+}
+
+.index-enhance-img img {
+  max-width: 60px;
+  transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+.integration-app-item:hover .index-enhance-img img {
+  transform: scale(1.2);
+  opacity: 0.9;
+}
+
+.app-name {
+  font-size: 16px;
+  font-weight: 500;
+  color: white;
+  margin-top: 10px;
+}
+.integration-box h1{
+  font-size: 50px;
+  font-weight: 500;
+}

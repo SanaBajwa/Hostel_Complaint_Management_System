@@ -1,0 +1,243 @@
+.sa-munshi-h2{
+  font-size: 32px;
+  color: #333;
+  margin-top: 15px;
+  margin-bottom: 37px;
+  text-align: center;
+}
+/* Container for sidebar and main content */
+.sa-munshi-dashboard-container {
+  display: flex;
+  font-family: Arial, sans-serif;
+  overflow: hidden;
+  margin-top: 60px;
+  width: 80%;
+  margin-left: 240px;
+}
+
+/* Main Content Styling */
+.sa-munshi-main-content {
+  flex-grow: 1;
+  padding: 20px;
+  width: 100%;
+  overflow: auto;
+}
+
+.sa-munshi-main-content-table-title {
+  font-size: 28px;
+  margin-bottom: 20px;
+}
+
+.sa-munshi-table {
+  background-color: black;
+}
+
+.Warden-filter-btn {
+  background-color: #a7a7f0;
+  color: white;
+  padding: 10px 15px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  display: flex;
+  align-items: center;
+}
+
+/* Table Styling */
+.sa-munshi-main-content table {
+  width: 100%;
+  min-width: 400px;
+  border-collapse: collapse;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  background: #ffffff;
+  margin-top: 50px;
+}
+
+.sa-munshi-main-content table th,
+table td {
+  padding: 12px;
+  text-align: left;
+  border: 1px solid #ddd;
+}
+
+.sa-munshi-main-content table th {
+  background-color: black;
+  font-size: 18px;
+  color: rgb(204, 199, 199);
+}
+
+.sa-munshi-main-content table td {
+  font-size: 16px;
+}
+
+/* Action Buttons Styling */
+.Warden_action-buttons {
+  margin-top: 20px;
+  display: flex;
+  justify-content: flex-start;
+}
+
+.sa-munshi-save-button,
+.sa-munshi-edit-button,
+.sa-munshi-delete-button,
+.sa-munshi-view-button,
+.sa-munshi-add-user-button {
+  padding: 10px 20px;
+  font-size: 16px;
+  margin: 5px;
+  cursor: pointer;
+  border: none;
+  color: white;
+  border-radius: 14px;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.sa-munshi-add-user-button {
+  background-color: #4caf50;
+  margin-top: 30px;
+  color: #ffffff;
+}
+
+.sa-munshi-delete-button {
+  background-color:  rgb(235, 29, 29);
+  color: #ffffff;
+}
+
+.sa-munshi-save-button {
+  background-color: #4caf50;
+  color: #ffffff;
+}
+.sa-munshi-view-button{
+  background-color: black;
+  color:  #ffffff;
+}
+.sa-munshi-edit-button{
+  background-color: blue;
+  color:  #ffffff;
+}
+
+.sa-munshi-add-user-button:hover,
+.sa-munshi-delete-button:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+.sa-munshi-add-user-button:active,
+.sa-munshi-delete-button:active {
+  transform: translateY(2px);
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+}
+
+
+/* 📌 Modal (Add New User Popup) */
+.sa-mun-show-modal {
+  position: fixed;
+  z-index: 1000;
+  top: 60px;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: start;
+}
+
+.sa-mun-show-modal.show {
+  display: flex;
+}
+
+.sa-mun-show-modal-content {
+  background: white;
+  padding: 20px;
+  margin-top: 40px;
+  border-radius: 10px;
+  width: 400px;
+}
+
+.sa-mun-show-modal-header {
+  font-size: 20px;
+  font-weight: bold;
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.sa-mun-show-modal input,
+.sa-mun-show-modal select {
+  width: 100%;
+  padding: 8px;
+  margin-top: 8px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+}
+
+.sa-mun-show-modal-buttons {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 15px;
+}
+
+.sa-mun-show-modal-save {
+  background-color: #4caf50;
+  color: white;
+  padding: 10px 15px;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+  margin-top: 10px;
+margin-right: 10px;
+}
+
+.sa-mun-show-modal-cancel {
+  background-color: grey;
+  color: white;
+  padding: 10px 15px;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.sa-mun-show-modal-save:hover {
+  background-color: #3d8f41;
+}
+
+.sa-mun-show-modal-cancel:hover {
+  background-color: #5a5a5a;
+}
+
+
+/* View Modal */
+.sa-mun-view-modal {
+  position: fixed;
+  z-index: 1000;
+  top: 60px;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: start;
+}
+
+.sa-mun-view-modal.show {
+  display: flex;
+}
+
+.sa-mun-view-modal-content {
+  background: white;
+  padding: 20px;
+  border-radius: 10px;
+  width: 400px;
+  margin-top: 40px;
+}
+@media (max-width: 768px) {
+  .sa-munshi-dashboard-container {
+    margin: 280px auto 0 auto;
+    width: 100%;
+  }
+  .sa-munshi-main-content {
+    padding: 0 10px;
+  }
+}

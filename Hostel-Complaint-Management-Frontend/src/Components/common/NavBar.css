@@ -1,0 +1,141 @@
+/* NavBar.css */
+
+/* Navbar container */
+.navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: auto; /* Height of the navbar */
+  background-color: black !important;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
+  padding: 0 20px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Slight shadow for depth */
+  z-index: 1000; /* Ensure navbar stays on top */
+}
+.first-half,
+.second-half {
+  display: flex;
+  align-items: center;
+}
+.first-half {
+  width: 55%;
+  justify-content: space-between;
+  gap: 10px;
+}
+.second-half {
+  width: calc(45% - 20px); /* Adjusted width to account for padding */
+  justify-content: space-around;
+  gap: 10px;
+}
+/* Navbar title */
+.navbar-title {
+  font-size: 3rem;
+  color: #f0f0f0; /* Blue color similar to the logo */
+  margin: 0;
+  font-weight: bold;
+}
+
+/* Profile button styles */
+.profile-btn {
+  background-color: #f0f0f0; /* Light greyish color */
+  border-style: inset;
+  width: 100px;
+  height: 45px;
+  border-radius: 20px;
+  cursor: pointer;
+  font-size: 1rem;
+  font-weight: bold;
+  color: #333;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Slight shadow for depth */
+  transition: background-color 0.3s ease;
+  /* padding-bottom: 10px; */
+}
+.navbar-logo h1 {
+  color: #f0f0f0 !important;
+}
+.profile-btn:hover {
+  background-color: #e0e0e0; /* Slightly darker grey on hover */
+}
+
+.profile-btn img {
+  height: 20px;
+  margin-top: -5px;
+  font-weight: bold;
+}
+
+/* NavBar.css */
+
+/* Responsive Design for smaller screens */
+@media (max-width: 768px) {
+  .navbar-title {
+    font-size: 2.5rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .navbar-title {
+    font-size: 2rem;
+  }
+
+  .profile-btn {
+    padding: 6px 12px;
+    font-size: 0.8rem;
+  }
+}
+/* Search Bar Styles */
+.navbar-search {
+  display: flex;
+  align-items: center;
+}
+
+.search-input {
+  width: 150px;
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 4px 0 0 4px;
+  outline: none;
+  font-size: 1rem;
+}
+
+.search-btn {
+  padding: 8px;
+  background-color: rgb(241, 241, 241);
+  color: black;
+  border: 1px solid #ccc;
+  border-radius: 0 4px 4px 0px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  width: 50px;
+}
+
+.search-btn:hover {
+  background-color: rgb(241, 241, 241);
+}
+
+@media (max-width: 768px) {
+  .navbar {
+    flex-direction: column;
+    padding: 20px;
+  }
+  .first-half, .second-half {
+    width: 100%;
+    justify-content: center;
+  }
+}
+
+/* Responsive Search Bar */
+@media (max-width: 800px) {
+  .search-input {
+    width: 100px;
+  }
+}
+
+@media (max-width: 480px) {
+  .search-input {
+    width: 80px;
+  }
+}

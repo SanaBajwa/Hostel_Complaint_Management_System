@@ -1,0 +1,27 @@
+.simple-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  background-color: #121212;
+  color: white;
+  text-align: center;
+  padding: 20px;
+}
+
+.paragraph {
+  font-size: 1.5rem;
+  margin-bottom: 20px;
+  max-width: 600px;
+}
+
+.tilted-image {
+  width: 300px; /* Adjust size as needed */
+  transform: rotate(-5deg); /* Tilt the image */
+  transition: transform 0.3s ease;
+}
+
+.tilted-image:hover {
+  transform: rotate(0deg); /* Straighten on hover */
+}

@@ -1,0 +1,283 @@
+/* Complaint container styling */
+.Munshi-complaint-container {
+  padding: 20px;
+  margin: 80px 5px 0 250px; /* Keeps space for sidebar */
+  /* background-color: #f9f9fc; Subtle light background */
+  border-radius: 10px;
+   /* Full height for the container */
+   /* Light shadow for depth */
+}
+
+/* Table container to handle overflow on smaller screens */
+.Munshi-complaint-table {
+  width: 100%;
+  /* overflow-x: auto; */
+  margin-top: 40px;
+}
+
+/* Table styling */
+.Munshi-complaint-table table {
+  width: 100%;
+  border-collapse: collapse;
+  background-color: white;
+  overflow: hidden; /* Prevent overflow on rounded corners */
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+}
+
+/* Table header */
+.Munshi-complaint-table th {
+  background-color:black !important; /* Professional purple-blue header color */
+  color: rgb(204, 199, 199);
+  text-align: left;
+  padding: 15px;
+  font-size: 16px;
+}
+
+/* Table rows */
+.Munshi-complaint-table td {
+  padding: 15px;
+  font-size: 15px;
+  color: #333; /* Neutral text color */
+  border-bottom: 1px solid #ddd; /* Subtle row divider */
+}
+
+/* Highlight alternate rows for readability */
+.Munshi-complaint-table tr:nth-child(even) {
+  background-color: #f8f9ff;
+}
+
+/* Hover effect for rows */
+.Munshi-complaint-table tr:hover {
+  background-color: #eef2ff; /* Light highlight on hover */
+}
+
+/* Button styling */
+.Munshi-check-btn {
+  padding: 8px 15px;
+  font-size: 14px;
+  color:white;
+  background-color:green !important; /* Professional green color for buttons */
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+/* Button hover effect */
+.Munshi-check-btn:hover {
+  background-color: rgb(204, 199, 199); /* Slightly darker green */
+  transform: translateY(-2px); /* Slight lift effect */
+}
+
+/* Filter Section */
+.Munshi-filter-section {
+  position: relative; /* To position the dropdown menu */
+  display: flex;
+  justify-content: flex-end;
+}
+/* Modal Styles */
+.munshi-modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.6);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 999;
+}
+
+.munshi-modal-content {
+  background: white;
+  padding: 30px;
+  width: 500px;
+  border-radius: 10px;
+  position: relative;
+}
+
+.munshi-close-btn {
+  position: absolute;
+  top: 10px;
+  right: 15px;
+  font-size: 18px;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+}
+
+.munshi-back-btn {
+  margin-top: 20px;
+  padding: 8px 16px;
+  background-color: #4682B4;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+/* Table Styles */
+.Munshi-complaint-table table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.Munshi-complaint-table th, .Munshi-complaint-table td {
+  padding: 10px;
+  text-align: left;
+}
+
+.Munshi-complaint-table button {
+  margin-right: 10px;
+}
+
+.Munshi-check-btn,
+.Munshi-view-btn {
+  padding: 5px 10px;
+  cursor: pointer;
+  border: none;
+  background-color: black;
+  color: white;
+  border-radius: 5px;
+}
+
+.Munshi-check-btn:hover,
+.Munshi-view-btn:hover {
+  background-color: black ;
+}
+
+.popup {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.7);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.popup-content {
+  background: white;
+  padding: 20px;
+  width: 300px;
+  text-align: center;
+  border-radius: 10px;
+}
+
+.popup-image {
+  width: 50px;
+  height: 50px;
+  margin-bottom: 10px;
+}
+
+.back-button {
+  padding: 8px 16px;
+  background-color: #4682B4;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.back-button:hover {
+  background-color: black;
+  color: white;
+}
+
+
+/* Filter Button */
+.Munshi-filter-btn {
+  padding: 10px 20px;
+  background-color:rgb(204, 199, 199);
+  color: black;
+  border: none;
+  border-radius: 5px;
+  font-size: 14px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  margin-top: 110px;
+  display: flex;
+  align-items: center; /* Align content vertically */
+  gap: 8px; /* Add space between text and image */
+  top:20px !important;
+}
+
+.Munshi-filter-btn img {
+  width: 16px; /* Adjust size of the image */
+  height: 16px; /* Ensure square aspect ratio */
+  display: inline-block; /* Ensure proper alignment */
+}
+
+.Munshi-filter-btn:hover {
+  background-color: #aaaab3;
+}
+
+
+/* Dropdown Menu */
+.Munshi-filter-dropdown {
+  position: absolute;
+  top: 120%; /* Adjust based on button position */
+  right: 0;
+  background-color: black;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  z-index: 1000; /* Ensure dropdown appears above other elements */
+  width: 180px;
+}
+
+.Munshi-filter-dropdown ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.Munshi-filter-dropdown ul li {
+  padding: 10px 15px;
+  font-size: 14px;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+.Munshi-filter-dropdown ul li:hover {
+  background-color:rgb(204, 199, 199);
+  color: black;
+}
+
+
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .Munshi-complaint-container {
+    margin: 250px auto 0 auto; /* Remove margin for sidebar */
+  }
+
+  table {
+    font-size: 14px; /* Reduce font size */
+  }
+
+  th,
+  td {
+    padding: 10px; /* Adjust padding for smaller screens */
+  }
+
+  .check-btn {
+    padding: 6px 12px; /* Smaller button for mobile */
+    font-size: 12px;
+  }
+}
+
+@media (max-width: 480px) {
+  th,
+  td {
+    font-size: 12px; /* Further reduce font size for mobile */
+    padding: 8px;
+  }
+
+  .check-btn {
+    padding: 5px 10px; /* Even smaller button */
+  }
+}

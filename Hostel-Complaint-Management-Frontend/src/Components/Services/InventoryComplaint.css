@@ -1,0 +1,14 @@
+.service-details-container {
+    background-color: #f8f9fa;
+    border: 1px solid #d6d8db;
+    color: #343a40;
+  }
+  
+  .service-details-container h2 {
+    color: #6c757d;
+  }
+  
+  .service-details-container ul li:hover {
+    color: #6c757d;
+  }
+  

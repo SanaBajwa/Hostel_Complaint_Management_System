@@ -1,0 +1,314 @@
+.rt-dashboard-container {
+  min-height: 100vh; /* Full viewport height */
+  display: flex;
+  justify-content: center; /* Center the menu horizontally */
+  padding: 20px;
+}
+
+/* Table container to handle overflow on smaller screens */
+.RT-complaint-table {
+  width: 100%;
+  overflow-x: auto;
+  margin-top: -70px;
+}
+.RT-filter-section {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  margin-bottom: 0px; /* Add margin to create space above the table */
+  margin-top: -40px;
+}
+
+.RT-filter-btn {
+  background-color: rgb(241, 241, 241) !important;
+  color: black !important;
+  border: none;
+  padding: 10px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 16px;
+  position: absolute;
+  top:81px;
+  right:71px;
+  border-radius: 10px;
+}
+
+.RT-filter-btn img {
+  width: 20px;
+}
+
+.RT-filter-dropdown {
+  position: absolute;
+  background-color: black !important;
+  border: 1px solid  rgb(204, 199, 199) !important;
+  color:  rgb(204, 199, 199);
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 10px;
+  margin-top: 10px;
+  z-index: 1000;
+  top:148px;
+  right:30px;
+  border-radius: 10px;
+}
+
+.RT-filter-dropdown ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.RT-filter-dropdown li {
+  padding: 5px;
+  cursor: pointer;
+}
+
+.RT-filter-dropdown li:hover {
+  background-color:  rgb(204, 199, 199);
+  color: black;
+}
+
+/* Specific styles for the table in ComplaintList */
+.RT-complaint-list-table {
+  width: 80%;
+  border-collapse: collapse;
+  background-color: white;
+  overflow: hidden;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  margin-top: 200px;
+  margin-left: 220px;
+}
+
+.RT-complaint-list-table th {
+  background-color:black !important;
+  color:  rgb(204, 199, 199);
+  text-align: center;
+  padding: 15px;
+  font-size: 16px;
+}
+
+.RT-complaint-list-table td {
+  padding: 15px;
+  font-size: 15px;
+  color: #333;
+  border-bottom: 1px solid #ddd;
+}
+
+
+
+button.RT-accept-btn, button.RT-reject-btn, button.RT-view-btn {
+  padding: 5px 10px;
+  margin: 5px;
+  border: none;
+  cursor: pointer;
+}
+
+button.RT-accept-btn {
+  background-color: rgb(142, 210, 142);
+  color: white;
+  border-radius: 5px;
+}
+
+button.RT-reject-btn {
+  background-color: rgb(241, 115, 115);
+  color: white;
+  border-radius: 5px;
+}
+
+button.RT-view-btn {
+  background-color: rgb(204, 199, 199);
+  color: black;
+  border-radius: 5px;
+}
+
+.RT-modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.RT-modal-content {
+  /* background-image: url('../assets/images/abstract-extruded-voronoi-blocks-background-minimal-light-clean-corporate-wall-3d-geometric-surface-illustration-polygonal-elements-displacement_1217-2503.avif'); */
+  padding: 20px;
+  border-radius: 8px;
+  background-color: white;
+  max-width: 500px;
+  width: 100%;
+  position: relative;
+}
+
+.RT-close-btn {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background-color: black;
+  color:  rgb(204, 199, 199);
+  border: none;
+  padding: 3px;
+  cursor: pointer;
+  width: 30px;
+  height: 30px;
+  border-radius: 5px;
+}
+
+.RT-complaint-detail h2 {
+  margin-bottom: 10px;
+}
+
+.RT-back-btn {
+  background-color: black;
+  color:  rgb(204, 199, 199);
+  border: none;
+  padding: 10px;
+  cursor: pointer;
+  margin-top: 10px;
+  border-radius: 10px;
+}
+/* ----------------------------------------- */
+.RT-priority-modal{
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+.RT-priority-modal-content{
+  /* background-image: url('../assets/images/abstract-extruded-voronoi-blocks-background-minimal-light-clean-corporate-wall-3d-geometric-surface-illustration-polygonal-elements-displacement_1217-2503.avif'); */
+  padding: 20px;
+  max-width: 500px;
+  border-radius: 8px;
+  width: 100%;
+  background-color: white;
+  position: relative;
+}
+/* .RT-priority-options{
+  margin-bottom: 10px;
+
+} */
+
+.RT-priority-close-btn {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background-color: black;
+  color:  rgb(204, 199, 199);
+  border: none;
+  padding: 3px;
+  cursor: pointer;
+  width: 30px;
+  height: 30px;
+  border-radius: 5px;
+}
+.RT-priority-send-btn {
+  background-color: black;
+  color:  rgb(204, 199, 199);
+  border: none;
+  padding: 10px;
+  cursor: pointer;
+  margin-top: 10px;
+  border-radius: 10px;
+} 
+
+/* Reject Modal Overlay */
+.RT-reject-modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+/* Reject Modal Content */
+.RT-reject-modal-content {
+  background: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  width: 400px;
+  max-width: 90%;
+  text-align: center;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+  position: relative;
+}
+
+/* Close Button */
+.RT-reject-close-btn {
+  position: absolute;
+  top: 10px;
+  right: 15px;
+  background: #ff4d4d;
+  color: white;
+  border: none;
+  padding: 5px 10px;
+  cursor: pointer;
+  font-size: 16px;
+  border-radius: 50%;
+}
+
+.RT-reject-close-btn:hover {
+  background: #cc0000;
+}
+
+/* Textarea for Rejection Reason */
+.RT-reject-textarea {
+  width: 100%;
+  height: 100px;
+  margin-top: 10px;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  font-size: 14px;
+  resize: none;
+}
+
+/* Reject Button */
+.RT-reject-send-btn {
+  margin-top: 15px;
+  background: #ff4d4d;
+  color: white;
+  padding: 10px 15px;
+  border: none;
+  cursor: pointer;
+  font-size: 16px;
+  border-radius: 5px;
+}
+
+.RT-reject-send-btn:hover {
+  background: #cc0000;
+}
+
+@media (max-width: 768px) {
+  .RT-complaint-list-table{
+    margin: 380px auto 0 auto; /* Center the table on smaller screens */
+  }
+  .rt-dashboard-container{
+    padding: 0; /* Add padding for smaller screens */
+  }
+  .RT-filter-btn {
+    top:250px;
+    right:10px;
+  }
+}
+@media (max-width: 480px) {
+  .RT-filter-btn {
+    width: calc(100% - 20px);
+    justify-content: center;
+    right: 0;
+    margin: 0 10px;
+  }
+}

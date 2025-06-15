@@ -1,0 +1,171 @@
+/* Sidebar styles */
+.student-sidebar {
+  width: 200px;
+  background-color: rgb(241, 241, 241);
+  height: calc(100vh - 60px); /* Full height */
+  overflow-y: auto;
+  padding: 20px;
+  position: fixed;
+  top: 60px;
+  left: 0;
+  box-sizing: border-box;
+  transition: width 0.3s ease-in-out;
+  z-index: 1000;
+}
+
+/* Sidebar Collapsed (for Mobile) */
+.student-sidebar.collapsed {
+  width: 60px;
+  overflow: hidden;
+}
+
+/* Sidebar logo */
+.student-sidebar-logo {
+  width: 100%;
+  height: auto;
+  margin-top: 10px;
+  margin-bottom: 20px;
+}
+
+/* Sidebar heading */
+.student-sidebar h3 {
+  font-size: 24px;
+  color: black;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+/* Sidebar list */
+.student-sidebar ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.student-sidebar ul li {
+  padding: 15px;
+  cursor: pointer;
+  color: black;
+  font-weight: bold;
+  transition: background-color 0.3s ease-in-out;
+  text-align: center;
+  border-radius: 8px;
+}
+
+.student-sidebar ul li:hover {
+  background-color: rgba(0, 0, 0, 0.1);
+}
+
+/* Sidebar Items */
+.student-complaints,
+.student-complaint-status {
+  color: white !important;
+  padding: 15px;
+  border-radius: 10px;
+  text-align: center;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  font-size: 18px;
+  transition: transform 0.3s ease;
+}
+
+/* Sidebar Icons */
+.student-complaints img,
+.student-complaint-status img {
+  width: 30px;
+  height: 30px;
+  margin-left: 15px;
+}
+
+/* Sidebar Link Styling */
+.student-complaints a,
+.student-complaint-status a {
+  color: black !important;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Mobile Toggle Button */
+.sidebar-toggle {
+  display: none;
+  position: absolute;
+  top: 15px;
+  left: 15px;
+  background: black;
+  color: white;
+  border: none;
+  padding: 8px 12px;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+
+
+@media (max-width: 768px) {
+  .student-sidebar h3 {
+    font-size: 20px;
+    margin-bottom: 0;
+  }
+
+  .student-sidebar ul li {
+    font-size: 16px;
+    padding: 12px;
+  }
+  .student-sidebar {
+    width: 100%;
+    height: auto;
+    padding: 15px;
+    top: 150px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .student-sidebar ul{
+      display: flex;
+  }
+  hr{
+      display: none; /* Hide the horizontal line */
+  }
+  .student-sidebar-logo {
+      display: none; /* Hide logo */
+  }
+  .student-complaints img, .student-complaint-status img {
+    margin-left: 0;
+  }
+}
+
+@media (max-width: 600px) {
+
+  .student-sidebar ul li {
+    font-size: 14px;
+    padding: 10px;
+  }
+
+  .sidebar-toggle {
+    display: block;
+  }
+
+  .student-sidebar.collapsed {
+    width: 60px;
+  }
+
+  .student-sidebar.collapsed ul li {
+    font-size: 12px;
+    padding: 8px;
+  }
+
+  .student-sidebar.collapsed h3 {
+    display: none;
+  }
+}
+@media (max-width: 520px) {
+  .student-sidebar li span{
+    display: none;
+  }
+}
+@media (max-width: 480px) {
+  .student-sidebar {
+      top: 140px;
+  }
+}

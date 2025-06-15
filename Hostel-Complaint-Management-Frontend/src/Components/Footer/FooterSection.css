@@ -1,0 +1,120 @@
+.AboutBeeTheTeacherWrapper{
+    background-color: black;
+    /* background-image: url(../assets//images/foo); */
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.logo-photo img{
+    width: 100%;
+    max-width: 300px;
+}
+.about-BTT h2{
+    font-family:  "Montserrat", sans-serif;
+    font-size: 25px;
+    font-weight: 800;
+    line-height: 30px;
+    text-align: left;
+    color:#FFFFFF;
+}
+.follow-icons  ul li a{
+    width: 27px;
+    height: 27px;
+    display: flex;
+    justify-content: center !important;
+    align-items: center !important;
+    background-color:  rgb(204, 199, 199) ;
+    font-size: 18px;
+    list-style-type: none;
+    color: black;
+    flex-direction: row;
+    list-style: none !important;
+    list-style-type: none !important;
+    margin-left: 5px;
+     border-radius: 5px;
+     /* margin-left: 0px; */
+  }
+  .Usefull-Links ul {
+    list-style: none !important;
+    list-style-type: none !important;
+    justify-content: left;
+    color: #FFFFFF;
+    font-family:  "Montserrat", sans-serif;
+font-size: 25px;
+font-weight: 800;
+line-height: 30px;
+text-align: left;
+
+  }
+  .course-BTT ul li{
+    color: #FFFFFF;
+    font-family:  "Montserrat", sans-serif;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 39px;
+    text-align: left;
+    
+  }
+  .Usefull-Links ul li{
+    color: #FFFFFF;
+    font-family:  "Montserrat", sans-serif;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 39px;
+    text-align: left;
+    
+
+  }
+  .course-BTT ul{
+    list-style: none !important;
+    list-style-type: none !important;
+    justify-content: left;
+    color: #FFFFFF;
+    font-family:  "Montserrat", sans-serif;
+font-size: 25px;
+font-weight: 800;
+line-height: 30px;
+text-align: left;
+  }
+  .follow-icons  ul {
+    list-style: none !important;
+    list-style-type: none !important;
+    justify-content: left;
+    margin-left: -34px;
+  }
+.about-BTT p{
+    font-family:  "Montserrat", sans-serif;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 22.4px;
+    text-align: left;
+    
+    color:#FFFFFF;
+}
+.follow-up h2{
+    font-family:  "Montserrat", sans-serif;
+    font-size: 25px;
+    font-weight: 800;
+    line-height: 30px;
+    text-align: left;
+    color:#FFFFFF;
+}
+.copyright-section{
+    font-family:  "Montserrat", sans-serif;
+font-size: 16px;
+font-weight: 500;
+line-height: 19.2px;
+text-align: left;
+color:#FFFFFF;
+margin-top: 80px;
+padding-bottom: 50px;
+}
+.copyright-section span{
+    color:#55DDE0;
+}
+
+@media (max-width: 768px) {
+    .logo-photo img{
+        max-width: 150px;
+        margin-bottom: 20px;
+    }
+}

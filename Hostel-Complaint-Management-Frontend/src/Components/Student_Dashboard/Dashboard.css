@@ -1,0 +1,58 @@
+/* Main content of the dashboard */
+.dashboard-main {
+  flex: 1;
+  padding: 20px;
+  position: relative;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  margin-left: 200px; /* Account for the sidebar width */
+  box-sizing: border-box;
+  transition: margin-left 0.3s ease-in-out; /* Smooth transition for sidebar adjustments */
+}
+
+/* UET logo - centered with opacity */
+.uet-logo {
+  width: 300px;
+  height: auto;
+  opacity: 0.1;
+  z-index: -1; /* Behind main content */
+}
+
+/* Responsive Design Adjustments */
+
+/* For tablets */
+@media (max-width: 1024px) {
+  .dashboard-main {
+    margin-left: 180px; /* Adjust for medium screens */
+  }
+
+  .uet-logo {
+    width: 250px; /* Slightly smaller logo */
+  }
+}
+
+@media (max-width: 768px) {
+  .dashboard-main {
+    margin-left: 0; /* Allow full-width content on smaller screens */
+    padding: 15px; /* Adjust padding for smaller viewports */
+  }
+
+  .uet-logo {
+    width: 200px;
+  }
+}
+
+/* For mobile devices */
+@media (max-width: 480px) {
+  .dashboard-main {
+    margin-left: 0; /* Remove sidebar spacing */
+    padding: 10px;
+  }
+
+  .uet-logo {
+    width: 135px; /* Smaller logo size for mobile */
+  }
+}

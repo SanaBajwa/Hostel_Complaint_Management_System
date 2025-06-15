@@ -1,0 +1,132 @@
+.achievement-wrapper{
+    height: 100%;
+   
+}
+.FooterSectionWrapper{
+    background-color: black;
+    /* background-image: url(../images/bannerphoto.png); */
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    padding: 80px 20px;
+
+}
+.achievement-content .p1 p{
+    font-family: "Bebas Neue", sans-serif;
+    font-size: 62px;
+    font-weight: 400;
+    line-height: 60px;
+    text-align: center;
+    color:white;
+}
+.achievement-content .p2 p{
+    font-family:"Montserrat", sans-serif;
+    font-size: 19px;
+    font-weight: 400;
+    line-height: 16.8px;
+    text-align: center;
+    color:#FFFFFF;
+}
+.vector-box-wrapper{
+    /* background-image: url(../assets/images/back-vector.png); */
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: 50%;
+}
+.vector-box-content h2{
+    font-family:"Montserrat", sans-serif;
+    font-size: 50px;
+    font-weight: 800;
+    line-height: 60px;
+    text-align: center;
+    color:#FFFFFF;
+}
+.vector-box-content p{
+    font-family: "Montserrat", sans-serif;
+    font-size: 15px;
+    font-weight: 500;
+    line-height: 18px;
+    text-align: center;
+    color:#FFFFFF;
+}
+.position2{
+    position: absolute;
+    top: 30px;
+    left: 280px;
+}
+.position3{
+    position: absolute;
+    top: 120px;
+    left: 40px;
+}
+.position4{
+    position: absolute;
+    top: 220px;
+    left: 270px;
+    /* width:100%; */
+    font-size: 20px;
+}
+
+.big-head {
+    text-align: center;
+    /* padding-left: 10px; */
+}
+.position5{
+    position: absolute;
+    top: 320px;
+    left: 30px;
+}
+.vector-box-content.big-content  {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.vector-box-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.achievement-icons{
+    /* margin-top: 100px; */
+    position: relative;
+    margin-left: -43px;
+    height: 500px;
+}
+@media (max-width: 768px) {
+    .achievement-content .p1 p{
+        font-size: 32px;
+        line-height: 40px;
+    }
+}
+@media (max-width: 420px) {
+    .position2{
+        position: absolute;
+        top: 30px;
+        left: 30px;
+    }
+    .position3{
+        position: absolute;
+        top: 140px;
+        left: 160px;
+    }
+    .position4{
+        position: absolute;
+        top: 250px;
+        left: 30px;
+    }
+    .position5{
+        position: absolute;
+        top: 360px;
+        left: 150px;
+    }
+    .content-container{
+        padding: 5px 25px
+    }
+    .content-container .title{
+        font-size: 20px;
+    }
+    .feature-list li{
+        font-size: 14px;
+    }
+}

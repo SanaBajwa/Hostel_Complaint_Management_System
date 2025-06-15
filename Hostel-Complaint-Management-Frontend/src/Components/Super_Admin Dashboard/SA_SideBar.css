@@ -1,0 +1,145 @@
+/* Sidebar styles */
+.sa_sidebar {
+  width: 250px; /* Sidebar width */
+  background-color: rgb(241, 241, 241); /* Sidebar background color */
+  height: calc(100vh - 60px); /* Full height */
+  overflow-y: auto;
+  padding: 20px; /* Padding inside the sidebar */
+  position: fixed; /* Fixed position */
+  top: 60px;
+  left: 0;
+  z-index: 100;
+  box-sizing: border-box; /* Include padding in width calculation */
+}
+
+.sa_header{
+  color: black !important;
+  font-size: 20px;
+  font-weight: 500;
+  font-size: bold;
+  margin-bottom: 20px !important;
+}
+
+/* Sidebar logo */
+.sa_sidebar-logo {
+  width: 100%; /* Make the logo take the full width of the sidebar */
+  height: auto; /* Maintain aspect ratio */
+  margin-top: 10px; /* Space from top */
+  margin-bottom: 20px; /* Space below the logo */
+}
+
+/* Sidebar heading */
+.sa_sidebar h3 {
+  font-size: 24px; /* Heading font size */
+  color: black; /* Heading color */
+  margin-bottom: 20px; /* Space below the heading */
+}
+
+/* Sidebar list */
+.sa_sidebar ul {
+  list-style: none; /* No bullets for list */
+  padding: 0; /* Remove default padding */
+  margin: 0; /* Remove default margin */
+}
+
+.sa_sidebar ul li a {
+  padding: 14px 7px; /* Padding for list items */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  display: block;
+  border-radius: 10px;
+  cursor: pointer; /* Cursor change on hover */
+  color: black; /* Text color for list items */
+  font-weight: bold; /* Make text bold */
+  transition: background-color 0.3s; /* Smooth transition for background color */
+  width: 100%; /* Full width of the sidebar */
+  box-sizing: border-box; /* Include padding in width calculation */
+}
+
+.sa_sidebar ul li:hover {
+  background-color: rgb(241, 241, 241); /* Background color on hover */
+}
+
+.Hostel-Icon {
+  color: black;
+  width: 30px;
+  height: 30px;
+  margin-left: 15px;
+  margin-top: -6px;
+}
+
+.RT-Icon {
+  color: black;
+  width: 30px;
+  height: 30px;
+  margin-left: 15px;
+  margin-top: -6px;
+}
+
+.Warden-Icon {
+  color: black;
+  width: 30px;
+  height: 30px;
+  margin-left: 15px;
+  margin-top: -6px;
+}
+
+.Graph-Icon {
+  color: black;
+  width: 30px;
+  height: 30px;
+  margin-left: 15px;
+  margin-top: -6px;
+}
+
+/* Media Queries for Responsiveness */
+
+/* Tablets */
+@media (max-width: 768px) {
+  .sa_sidebar {
+    width: 100%;
+    height: auto;
+    padding: 15px;
+    top: 150px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .sa_header{
+    margin-bottom: 0 !important;
+  }
+  .sa_sidebar ul{
+      display: flex;
+  }
+  hr{
+      display: none; /* Hide the horizontal line */
+  }
+  .sa_sidebar-logo {
+      display: none; /* Hide logo */
+  }
+  .Hostel-Icon,
+  .RT-Icon,
+  .Warden-Icon,
+  .Graph-Icon{
+    margin-left: 5px;
+  }
+}
+@media (max-width: 520px) {
+  .sa_sidebar li span{
+    display: none;
+  }
+}
+@media (max-width: 620px) {
+  .Hostel-Icon,
+  .RT-Icon,
+  .Warden-Icon,
+  .Graph-Icon{
+    margin-top: 0px;
+  }
+}
+
+/* Mobile devices */
+@media (max-width: 480px) {
+  .sa_sidebar {
+    top: 140px;
+  }
+}

@@ -1,0 +1,57 @@
+/* Main content of the dashboard */
+.SA_dashboard-main {
+  flex: 1;
+  padding: 20px;
+  position: relative;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  margin-left: 250px;
+  box-sizing: border-box;
+}
+
+/* UET logo - perfectly centered with opacity */
+.SA_uet-logo {
+  width: 300px;
+  height: auto;
+  opacity: 0.1;
+  z-index: -1;
+}
+
+/* Media Queries for Responsiveness */
+
+/* For tablets */
+@media (max-width: 768px) {
+  .SA_dashboard-main {
+    margin: 210px auto 0 auto !important; /* Adjust margin for smaller sidebar width */
+  }
+
+  .SA_uet-logo {
+      width: 200px;
+  }
+}
+
+/* For mobile devices */
+@media (max-width: 480px) {
+  .SA_dashboard-main {
+      margin-left: 0;
+      padding: 10px;
+  }
+
+  .SA_uet-logo {
+      width: 135px;
+  }
+}
+
+/* Additional responsiveness */
+@media (max-width: 1024px) {
+  .SA_dashboard-main {
+      margin-left: 250px;
+  }
+
+  .SA_uet-logo {
+      width: 250px;
+  }
+}
